@@ -192,8 +192,8 @@ var log = {
 };
 if (!process.getuid)
     log.fatal('error.unsupportedOs');
-else if (process.getuid() !== 0)
-    log.fatal('error.rootRequired');
+// else if (process.getuid() !== 0)
+//     log.fatal('error.rootRequired');
 if (!['x64', 'arm64'].includes(process.arch))
     log.fatal('error.unsupportedArch', process.arch);
 if (!process.env.HOME)
