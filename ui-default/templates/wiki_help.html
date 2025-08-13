@@ -1,0 +1,184 @@
+{% extends "layout/wiki_base.html" %}
+{% block wiki_content %}
+{% set name = handler.domain.ui.name|default(model.system.get('server.name')) %}
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="domain" data-heading>{{ _('Domain') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>各ユーザーは自身のドメインを作成できます。例えば、教師は授業のためにドメインを作成し、問題や学生をそのドメインに追加できます。また、ドメインをチーム機能として利用することも可能です。</p>
+    <p>役割とその権限を適切に設定することで、ドメインを公開または非公開に設定できます。</p>
+    <p>デフォルトドメインは system です。ユーザーが {{ name }} のドメインに直接アクセスすると、このドメインにアクセスします。Hydro のロゴをクリックすると、どのドメインからでも system ドメインに戻ります。</p>
+    <p>各ドメインの問題集、ディスカッション、トレーニング、およびコンテストは独立しており、自己管理されています。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="compiler" data-heading>{{ _("Compilers' Version and Parameters") }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>{{ name }} は <a href="https://github.com/hydro-dev/Hydro/tree/master/packages/hydrojudge">HydroJudge</a> を使用して採点します。コンパイル時のパラメータと現在のコンパイラのバージョンはステータスページを参照してください。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="limits" data-heading>{{ _('Limitations') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>{{ name }} のジャッジシステムは、プロセスの CPU 時間を使用して時間消費を計算します。時間の制限は、問題のテストケースで指定された時間です。</p>
+    <p>{{ name }} のジャッジシステムは、プロセスの仮想メモリと物理メモリの合計を使用してメモリ空間の消費量を計算します。メモリ空間のデフォルト制限は 256MiB です。問題で特に指定されている場合は、問題のテストケースで指定されたメモリ空間に限定されます。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="io" data-heading>{{ _('IO') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>特別な指示がない限り、{{ name }} は標準入出力（コンソール入出力、画面入出力、STD I/O）を使用します。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="status" data-heading>{{ _('Judge Status') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <ul>
+      <li><span class="record-status--text pending">Waiting</span> 採点中：採点リクエストがジャッジシステムで処理されるのを待っています</li>
+      <li><span class="record-status--text progress">Fetched</span> 採点中：採点リクエストがジャッジシステムで取得され、採点開始の準備中です</li>
+      <li><span class="record-status--text progress">Compiling</span> 採点中：コンパイル中です</li>
+      <li><span class="record-status--text progress">Judging</span> 採点中：コンパイルに成功し、採点中です</li>
+      <li><span class="record-status--text pass">Accepted</span> 合格：プログラムの出力が完全に正しいです</li>
+      <li><span class="record-status--text fail">Wrong Answer</span> 不合格：プログラムの出力が標準の答えと一致しません（行末のスペースやファイル末尾の空行を除く）</li>
+      <li><span class="record-status--text fail">Time Limit Exceeded</span> 不合格：プログラムの実行時間が問題の制限を超えました</li>
+      <li><span class="record-status--text fail">Memory Limit Exceeded</span> 不合格：プログラムの実行メモリ空間が問題の制限を超えました</li>
+      <li><span class="record-status--text fail">Runtime Error</span> 不合格：プログラムの実行時エラー（配列の範囲外アクセス、ゼロ除算、演算オーバーフロー、スタックオーバーフロー、無効なポインタなど）</li>
+      <li><span class="record-status--text fail">Compile Error</span> 不合格：コンパイルに失敗しました</li>
+      <li><span class="record-status--text fail">System Error</span> エラー：システムエラー（この問題が発生した場合は、ディスカッションフォーラムで報告してください）</li>
+      <li><span class="record-status--text ignored">Canceled</span> その他：採点がキャンセルされました</li>
+      <li><span class="record-status--text fail">Unknown Error</span> その他：不明なエラー</li>
+      <li><span class="record-status--text ignored">Ignored</span> その他：無視されました</li>
+    </ul>
+    <blockquote class="note">「成績取り消し」と表示されている場合、管理者がこの記録を手動で取り消し済みであることを意味します。これは、コードが他のユーザーのコードと非常に似ていることが判明するなど、利用規約に違反した可能性があります。</blockquote>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="ce" data-heading>{{ _('Compile Error') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>以下の状況が考えられます。</p>
+    <blockquote><ul>
+      <li>1. 提出時にプログラミング言語を間違って選択した</li>
+      <li>2. Java のメインクラス名が "Main" ではない</li>
+      <li>3. C/C++ の場合：以下を参照</li>
+      <li>4. 一般的なコンパイルエラー</li>
+    </ul></blockquote>
+    
+    <blockquote class="warn">
+      <p>C/C++ ユーザーへの特別な注意：</p>
+      <ul>
+        <li>1. GNU C++ では __int64 は long long 型として記述する必要があります</li>
+        <li>2. main() の戻り値は void ではなく int として定義する必要があります</li>
+        <li>3. "for (int i = 0...)" のような文では、for 文の後のインデックス変数 i は無効になります</li>
+        <li>4. itoa は一般的な ANSI 関数ではありません（標準 C/C++ にはこの関数はありません）</li>
+        <li>5. printf で %lf 形式を使用するのは正しくありません</li>
+      </ul>
+    </blockquote>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="training" data-heading>{{ _('Training') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>私たちは、厳選した問題でトレーニングプランを構成しました。ナビゲーションバーの「トレーニング」をクリックしてアクセスしてください！</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="contest" data-heading>{{ _('Contest') }}</h1>
+  </div>
+  <div class="section__body typo richmedia">
+    <p>コンテスト形式によって、提出やランキングのルールが異なります。
+    <p>OI 形式では、すべての問題は最後の提出に基づいて採点されます。特に、コンパイルエラーを避けるようにしてください。</p>
+    <p>OI 形式のランキングルール：合計点が高い順に順位が決まります。合計点が同じ場合は同じ順位になります。</p>
+    <p>ACM/ICPC 形式では、すべての問題は提出後すぐに採点され、合格かどうかが基準となります。</p>
+    <p>ACM/ICPC 形式のランキングルール：合格した問題数が多い順に順位が決まります。合格した問題数が同じ場合は、問題解決にかかった時間（ペナルティ時間を含む）が少ない方が上位になります。</p>
+    <p>{{ _('Ledo') }} 形式では、選手は1つの問題に複数回提出でき、リアルタイムの採点結果を取得できます。</p>
+    <p>{{ _('Ledo') }} 形式では、複数回の提出により選手の得点が減点されます。ランキングにはユーザーの最高得点が表示されます。</p>
+    <p>{{ _('Ledo') }} 形式では、各問題の最終得点は $s \times \max(0.95^{n}, 0.7)$ です。$s, n$ はそれぞれ今回の得点と今回の提出前の試行回数を表します。</p>
+    <p>{{ _('Ledo') }} のランキングルール：上記のルールで換算された点数が高い順に順位が決まります。</p>
+    <p>{{ _('IOI(Strict)') }} 形式では、IOI 形式とは異なり、コンテスト終了までランキングが非公開となります。</p>
+    <p>{{ _('IOI(Strict)') }} 形式では、各問題のランキング得点は、すべての提出の中でユーザーの各サブタスクの最大得点の合計となります。</p>
+    <p>時間と空間の制限は問題の説明に従ってください。デフォルトの制限は<a href="#limits">{{ _('Limitations') }}</a>を参照してください。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="acratio" data-heading>{{ _('Accepted Ratio') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>正答率は悪影響が大きいため、{{ name }} では正答率を提供も承認もしていません。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="rp" data-heading>{{ _('RP Algorithm') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>RP は、問題、アクティビティ、コンテストなどから獲得できます。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="pbmdiff" data-heading>{{ _('Difficulty Algorithm') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>{{ name }} の問題の難易度は、提出数、正答率、および各提出の提出時間と採点結果に基づいて、アルゴリズムによって計算されます。</p>
+    <p>したがって、以下の点に注意してください。</p>
+    <ul>
+      <li>0. 一般的に、難易度の数値が大きいほど、問題は難しくなります。</li>
+      <li>1. 新しい問題の難易度は不正確な場合があります。多くの提出が行われた後に、難易度はより正確になります。</li>
+      <li>2. 採点のための提出が早いユーザーのコードの採点結果は、問題の難易度に大きな影響を与えます。</li>
+      <li>3. 問題の難易度はアルゴリズムによって計算されるため、不正確な結果になる可能性があります。</li>
+    </ul>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="upload" data-heading>{{ _('Dataset Format') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>詳細は<a href="https://hydro.js.org/docs/Hydro/user/testdata">設定ドキュメント</a>を参照してください。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="lostpass" data-heading>{{ _('Forgot Password and/or Username') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>ログインできない場合は、ユーザー名を間違えていないか確認してください。例えば、登録しようとしたユーザー名がすでに登録済みだったため、接頭辞や接尾辞を付けたユーザー名を使った可能性があります。</p>
+    <p>アカウントが盗まれた、またはアカウント名やパスワードを忘れてしまったと確信している場合は、速やかに<a href="{{ url('user_lostpass') }}">{{ _('Reset Password or Find Username') }}</a>を行ってください。</p>
+  </div>
+</div>
+<div class="section" data-heading-extract-to="#menu-item-wiki_help">
+  <div class="section__header">
+    <h1 class="section__title" id="markdown" data-heading>{{ _('Markdown') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>Hydro の Markdown 領域は <a href="http://commonmark.org/help/">CommonMark</a> 構文を使用し、以下の機能が拡張されています。</p>
+    <ul>
+      <li><a href="https://onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm">Katex</a> 構文に基づいた数式に対応。</li>
+      <li>`@[](/user/uid)` を使用してユーザーに言及。</li>
+      <li>`==text==` を使用してテキストをハイライト。</li>
+      <li>`![alt](url =100x100)` を使用して埋め込み画像のサイズを設定。</li>
+      <li>`@[video](https://.../a.mp4)` を使用して動画ファイルを埋め込み。</li>
+      {# <li>`@[bilibili](BVxxx)` を使用して外部動画を埋め込み。</li> #}
+      <li>`@[pdf](https://.../a.pdf)` を使用して PDF ファイルを埋め込み。</li>
+      <li>問題/コンテスト/課題/トレーニングでは、`file://ファイル名` のリンク形式を使用して、対応する添付ファイルを参照できます。（推奨）</li>
+      <li>一部の HTML タグの使用をサポート。</li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
