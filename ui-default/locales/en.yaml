@@ -1,0 +1,1107 @@
+__id: en
+__langname: 日本語
+'"{data}" copied to clipboard!': “{data}”がクリップボードにコピーされました！
+'[Richtext message]': '[リッチテキストメッセージ]'
+'{0} comments': '{0} 件のコメント'
+'{0} discussions': '{0} 件のディスカッション'
+'{0} is a moderator of this domain.': '{0}はこのドメインの管理人です。'
+'{0} is a superuser.': '{0}はスーパーユーザーです。'
+'{0} limit exceeded (limit: {2} operations in {1} seconds).': '{0}は制限を超えました（制限：{1}秒以内に{2}回の操作）。'
+'{0} problem(s) selected': '{0} 道題目が選択されました'
+'{0} problems': '問題 {0} 番'
+'{0} sections': '{0} 小節'
+'{0} solutions': '{0} 条題解'
+'{0} views': '{0} 回の閲覧'
+'{0}: Groups': '{0}: グループ'
+'{0}: Permissions': '{0}: 権限'
+'{0}: Roles': '{0}: 役割'
+'{0}: Users': '{0}: ユーザー'
+'# My Submissions': '私の提出数'
+'# Submissions': '提出数'
+'↓ # Comments': '↓ コメント数'
+'↓ # Enrollees': '↓ 参加者数'
+'↓ # Likes': '↓ いいね数'
+'↓ # Stars': '↓ スター数'
+'↓ Create Time': '↓ 作成時間'
+'↓ Update Time': '↓ 更新時間'
+'A domain ID cannot be changed after creation. It is supposed to be:': '作成後はドメインIDを変更することはできません。IDは次の条件を満たす必要があります：'
+'Copy "{data}" failed :(': 'コピー“{data}”に失敗しました :('
+'Copy failed :(': 'コピーに失敗しました :('
+'Current dataset: {0}': '現在のテストデータセット: {0}'
+'Discussion: Terms Of Service': 'ディスカッション: 利用規約'
+'Drag and drop testcases here:': 'テストケースをここにドラッグ＆ドロップしてください：'
+'Enter a new name for the file: ': '新しいファイル名を入力してください：'
+'Failed to get credential: {0}': '認証情報の取得に失敗しました: {0}'
+'File IO: {0}': 'ファイルIO: {0}'
+'File upload failed: {0}': 'ファイルアップロードに失敗しました: {0}'
+'Format: category 1, category 2, ..., category n': 'フォーマット: カテゴリ1, カテゴリ2, ..., カテゴリn'
+'Hello, {0}! You can click following link to active your new email of your {1} account:': 'こんにちは、{0}！以下のリンクをクリックして、{1}アカウントの新しいメールアドレスをアクティブにできます：'
+'Hello, {0}! You can click following link to reset the password of your {1} account:': 'こんにちは、{0}！以下のリンクをクリックして、{1}アカウントのパスワードをリセットできます：'
+'Hello! You can click following link to sign up your {0} account:': 'こんにちは！以下のリンクをクリックして、{0}アカウントにサインアップできます：'
+'Join {0}': '加入 {0}'
+'No': 否
+'Note: Problem title may not be hidden.': 注意：題目タイトルは隠されない可能性があります。
+'Or use the following link:': または以下のリンクを使用してください：
+'Packages have new version: {0}': '以下のパッケージに新しいバージョンがあります： {0}'
+'Please use your two factor authentication app to scan the qrcode below:': '二要素認証アプリを使用して、以下のQRコードをスキャンしてください：'
+'Role {1} already exists in domain {0}.': 'ドメイン {0} に既に役割 {1} が存在します。'
+'Solved {0} problems, RP: {1} (No. {2})': '解決した問題 {0} 件、RP: {1} (No. {2})'
+'The domain owner:': 'ドメイン所有者：'
+'The value `{1}` of {0} already exists.': '{0} の値 `{1}` は既に存在します。'
+'Yes': 'はい'
+"Effects only when Difficulty is not 'Use algorithm calculated'.": 難易度が「アルゴリズム計算を使用」の場合のみ効果があります。
+"Split by ', '.": 「, 」で分割します。
+"View other's records": 他の人の記録を見る
+"What's file?": 何がファイルですか？
+(All Problems): (すべての問題)
+(leave blank if none): （該当なしの場合は空白のままにしてください）
+(None): (なし)
+(Not changed): 未更改
+6-Digit Code: 6位コード
+A data generator is a program that generates testdata. It should output result to stdout.: データ生成器はテストデータを生成するプログラムです。結果は標準出力に出力する必要があります。
+A standard program is a program that solves the problem. It should output answer to stdout.: 標準プログラムは問題を解決するプログラムです。答えは標準出力に出力する必要があります。
+Aborted: 中止
+About {0}: '{0} について'
+About Markdown: Markdown について
+About test data: テストデータについて
+about: について
+About: について
+AC Message: メッセージを通じて
+Accept: 受け入れる
+Accepted Problems: 受け入れられた問題
+Accepted Ratio: 受け入れ率
+Accepted: 受け入れられた
+Access Control: アクセス制御
+According to the contest rules, you cannot view your submission details at current.: コンテストのルールにより、現在あなたの提出詳細を表示することはできません。
+Account Settings: アカウント設定
+Action: アクション
+Active Sessions: アクティブセッション
+Add Authenticator: 認証器を追加
+Add File: ファイルを追加
+Add module: モジュールを追加
+Add new data: 新しいデータを追加
+Add new subtask: 新しいサブタスクを追加
+Add prefix: プレフィックスを追加
+Add prefix/suffix: プレフィックス/サフィックスを追加
+Add suffix: サフィックスを追加
+Add testcase: テストケースを追加
+Add User: ユーザーを追加
+Add: 追加
+additional_file: 追加ファイル
+All {0} Contests: すべての {0} コンテスト
+All changes will be lost. Are you sure to clear all answers?: すべての変更が失われます。すべての回答をクリアしてもよろしいですか？
+All Contests: すべてのコンテスト
+All Homeworks: すべての宿題
+All Languages: すべての言語
+All Submissions: すべての提出
+All Training Plans: すべてのトレーニングプラン
+All Users: すべてのユーザー
+All: すべて
+Allow to maintain this {0}: この {0} を管理することを許可
+Allow user view others code after contest: ユーザーがコンテスト後に他の人のコードを見ることを許可
+Always granted all privileges: すべての権限が常に付与されます
+An error has occurred.: エラーが発生しました。
+An example of dataset: テストデータセットの一例
+Any user is allowed to join this domain with an invitation code: 任意のユーザーは招待コードを使用してこのドメインに参加できます
+Any user is allowed to join this domain: 任意のユーザーはこのドメインに参加できます
+API: API
+Are you sure to rename the following file?: 以下のファイルの名前を変更してもよろしいですか？
+Are you sure you want to delete this subtask?: このサブタスクを削除してもよろしいですか？
+Argument {0} is invalid.: 無効な引数 {0} です。
+Arguments: 引数
+Assign User or Group: ユーザーまたはグループに割り当て
+Assign: 割り当て
+Assignment: 課題
+At least 4 characters: 4文字以上
+Attend Contest: コンテストに参加
+Attend contests: コンテストに参加
+Attended: 参加済み
+Attendee Manage: 参加者管理
+Authenticator: 認証器
+Authenticators: 認証器
+author: 作者
+Auto configure: 自動構成
+Auto detect: 自動検出
+Auto hide problems during the contest: コンテスト中に問題を自動的に非表示にする
+Auto Read Tasks: 自動的にタスクを読み取る
+Awards: 賞
+Balloon Status: バルーンの状態
+Basic Info: 基本情報
+Basic: 基本
+Batch replacement: バッチ置換
+Be Copied: コピーされる
+Begin at: 開始時刻
+Begin Date: 開始日
+Begin Time: 開始時間
+Belongs to: 所属
+Bio Visibility: プロフィールの可視性
+Bio: プロフィール
+Bold: 太字
+Boom!: 爆発しました！
+Browser: ブラウザ
+Built-in: 内蔵
+Bulletin: お知らせ
+By clicking the button, you will become a member of the domain {0}.: ボタンをクリックすると、ドメイン {0} のメンバーになります。
+By Contest: コンテスト別
+By Language: 言語別
+By Problem: 問題別
+By signing up a {0} universal account, you can submit code and join discussions in all online judging services provided by us.: '{0} ユニバーサルアカウントにサインアップすると、私たちが提供するすべてのオンラインジャッジサービスでコードを提出し、ディスカッションに参加できます。'
+By Status: ステータス別
+By Username / UID: ユーザー名/UID別
+Calendar View: カレンダー表示
+Calendar: カレンダー
+Can be Extended For: 延長可能
+Cancel Score: スコアをキャンセル
+Cancel: キャンセル
+Categories: カテゴリ
+Category: カテゴリ
+Change Email: メールアドレスを変更
+Change Password: パスワードを変更
+Change Theme: テーマを変更
+Check In: チェックイン
+Checker: チェッカー
+CheckerType: チェッカータイプ
+Chinese: 中国語
+Choose Authenticator Type: 認証器タイプを選択
+Choose the background image in your profile page.: プロフィールページの背景画像を選択してください。
+Claim homework: 宿題を請求する
+Claim Homework: 宿題を請求する
+Claimed: 請求済み
+Clear answers: 回答をクリアする
+Clear Marks: マークをクリアする
+Click here to chat with me: ここをクリックして私とチャットしてください
+click to add: 追加するにはクリックしてください
+Clone: 複製
+CLOSE: 閉じる
+Code blocks: コードブロック
+Code language: コード言語
+Code Length: コード長
+Code: コード
+codeFontFamily: コードフォント
+collapse: 折りたたむ
+Color: 色
+Comment: コメント
+Comments: コメント
+CommonMark Syntax: CommonMark 構文
+Compile Error: コンパイルエラー
+Compilers' Version and Parameters: コンパイラのバージョンとパラメータ
+Complete: 完了
+Completed: 完了
+Config: 設定
+Confirm deleting the selected roles?: 選択した役割を削除してもよろしいですか？
+Confirm deleting this comment? Its replies will be deleted as well.: このコメントを削除してもよろしいですか？その返信も削除されます。
+Confirm deleting this reply?: この返信を削除してもよろしいですか？
+Confirm rejudge this problem?: この問題を再審査してもよろしいですか？
+Confirm removing the selected users?: 選択したユーザーを削除してもよろしいですか？
+Confirm to delete the file?: このファイルを削除してもよろしいですか？
+Confirm to delete the selected files?: 選択したファイルを削除してもよろしいですか？
+Confirm to delete the selected problems?: 選択した問題を削除してもよろしいですか？
+Confirmation mail has been sent to your new email.: 確認メールが新しいメールアドレスに送信されました。
+Congratulations! Your submission is accepted.: おめでとうございます！あなたの提出は受理されました。
+Contact Us: お問い合わせ
+Contact: お問い合わせ
+Content copied to clipboard!: 内容がクリップボードにコピーされました！
+content: 内容
+Content: 内容
+Contest Maintainer: コンテスト管理者
+Contest scoreboard is not visible.: 現在のコンテストのスコアボードは非表示です。
+Contest Scoreboard: コンテストスコアボード
+Contest Settings: コンテスト設定
+contest_create: コンテスト作成
+contest_detail_problem_submit: コンテスト問題提出
+contest_edit: コンテスト編集
+contest_main: コンテスト
+contest_scoreboard: コンテストスコアボード
+Contest: コンテスト
+Continue: 続行
+Contributed Problems: 貢献された問題
+Contributions: 貢献
+Copy Email: メールアドレスをコピー
+Copy from: からコピー
+Copy Link: リンクをコピー
+Copy QQ Number: QQ番号をコピー
+Copy Selected: 選択したものをコピー
+Copy WeChat Account: WeChatアカウントをコピー
+Copy: コピー
+Copyright Complaint: 著作権侵害の申し立て
+Correction: 補題
+CPU Info: CPU情報
+Create a contest: コンテストを作成
+Create a Discussion: 議論を作成
+Create a Post: 投稿を作成
+Create a problem: 問題を作成
+Create Contest: コンテストを作成
+Create contests: コンテストを作成
+Create Discussion in {0}: '{0}で議論を作成'
+Create Discussion: 議論を作成
+Create discussions: 議論を作成
+Create Domain: ドメインを作成
+Create File: ファイルを作成
+Create Group: グループを作成
+Create homework: 宿題を作成
+Create Homework: 宿題を作成
+Create Link: リンクを作成
+Create problem solutions: 問題の解答を作成
+Create Problem: 問題を作成
+Create problems: 問題を作成
+Create Role: ロールを作成
+Create Training Plan: 練習プランを作成
+Create training plans: 練習プランを作成
+Create: 作成
+Created By: 作成者
+Current dataset comes from: 現在のデータセットは以下から
+current domain: 現在のドメイン
+Current Email: 現在のメールアドレス
+Current Location: 現在地
+Current password doesn't match.: 現在のパスワードが一致しません。
+Current Password: 現在のパスワード
+Current Status: 現在のステータス
+currently offline: 現在オフライン
+Daily update check: 毎日自動更新チェック
+Dark: ダーク
+Data Generator: データジェネレーター
+Data of Problem {0} not found.: 問題 {0} のデータが見つかりません。
+Data of problem {1} not found.: 問題 {1} のデータが見つかりません。
+Data of record {0} not found.: レコード {0} のデータが見つかりません。
+Dataset Format: テストデータセット形式
+Dataset: テストデータ
+Day: 日
+Deadline: 締め切り
+Default Code Language: デフォルトのコード言語
+Default Code Template: デフォルトのコードテンプレート
+Delete discussion replies of own discussion: 自分の議論内の返信を削除
+Delete discussion replies: 議論の返信を削除
+Delete discussions: 議論を削除
+Delete Domain: ドメインを削除
+Delete own discussion replies: 議論内の自分の返信を削除
+Delete own discussions: 自分の議論を削除
+Delete own problem solution replies: 問題の解答内の自分の返信を削除
+Delete own problem solutions: 自分の問題の解答を削除
+Delete problem solution replies: 問題の解答の返信を削除
+Delete problem solutions: 問題の解答を削除
+Delete Selected Roles: 選択したロールを削除
+delete: 削除
+Delete: 削除
+Dependencies: 依存関係
+Description: 説明
+Destination Domain: ターゲットドメイン
+Development: 開発
+Difficulty Algorithm: 難易度アルゴリズム
+Difficulty by admin: 管理者による難易度設定
+Difficulty by algorithm: アルゴリズムによる難易度設定
+Difficulty displayed: 表示される難易度
+Difficulty: 難易度
+Disabled: 無効
+Disconnected from the server. trying to reconnect...: サーバーへの接続が切断されました。再接続を試みています...
+Discussion {1} not found.: 議論 {1} が存在しません。
+Discussion category {1} already exists.: 議論カテゴリ {1} は既に存在します。
+Discussion category {1} not found.: 議論カテゴリ {1} が存在しません。
+Discussion node {1} already exists.: 議論ノード {1} は既に存在します。
+Discussion node {1} not found.: 議論ノード {1} が存在しません。
+Discussion Nodes: 議論ノード
+discussion_create: 議論を作成
+discussion_edit: 議論を編集
+discussion_main: 議論
+discussion_node: 議論
+Discussion: 議論
+Discussions: 議論
+Dismiss: 無視
+Display name {1} you want to set is used by others.: 設定したい表示名 {1} は他のユーザーが使用しています。
+Display Name: 表示名
+display_name: 表示名
+Do not discuss solutions otherwise you will be regarded as cheating and then lose qualifications.: 解法を議論しないでください。そうしないと不正行為と見なされ、参加資格を失います。
+Document {2} not found.: ドキュメント {2} が存在しません。
+Domain {0} already exists.: ドメイン {0} は既に存在します。
+Domain {0} is bulit-in and cannot be modified.: ドメイン {0} は組み込みで、変更できません。
+Domain {0} not found.: ドメイン {0} が存在しません。
+Domain ID cannot be changed once the domain is created.: ドメイン作成後はドメインIDを変更できません。
+Domain ID: ドメインID
+Domain Settings: ドメイン設定
+domain_dashboard: ドメインを管理
+domain_discussion: 議論ノード
+domain_edit: ドメイン情報を編集
+domain_join: ドメインに参加
+domain_main: ホーム
+domain_permission: 権限を管理
+domain_role: ロールを管理
+domain_user: ユーザーを管理
+domain: ドメイン
+Domain: ドメイン
+Don't have an account?: アカウントをお持ちではありませんか？
+Don't show again: 今後表示しない
+Done: 終了
+Download All: すべてダウンロード
+Download Dataset: データセットをダウンロード
+Download Selected: 選択したものをダウンロード
+Download: ダウンロード
+Downvote: 役に立たない
+Duration (hours): 期間（時間）
+Duration: 期間
+Edit any contests: 任意のコンテストを編集
+Edit any homework: 任意の宿題を編集
+Edit Contest: コンテストを編集
+Edit description of this domain: このドメインの説明を編集
+Edit discussion replies of own discussion: 自分の議論内の返信を編集
+Edit discussion replies: 議論の返信を編集
+Edit discussions: 議論を編集
+Edit Domain: ドメインを編集
+Edit Homework: 宿題を編集
+Edit own contests: 自分のコンテストを編集
+Edit own discussion replies: 自分の議論内の返信を編集
+Edit own discussions: 自分の議論を編集
+Edit own homework: 自分の宿題を編集
+Edit own problem solution replies: 問題の解答内の自分の返信を編集
+Edit own problem solutions: 自分の問題の解答を編集
+Edit own problems: 自分の問題を編集
+Edit own training plans: 自分の練習プランを編集
+Edit permissions of a role: ロールの権限を編集
+Edit problem solution replies: 問題の解答の返信を編集
+Edit problem solutions: 問題の解答を編集
+Edit Problem: 問題を編集
+Edit problems: 問題を編集
+Edit Profile: プロフィールを編集
+Edit training plans: 練習プランを編集
+Edit: 編集
+Edited at: 編集日時
+Edited: 編集済み
+Email Visibility: メールアドレスの可視性
+Email: メールアドレス
+Enabled: 有効
+End at: 終了日時
+End Date: 終了日
+End Time: 終了時間
+Enroll Training: 練習に参加
+Enrolled: 参加済み
+Enrollees: 参加者数
+error: エラー
+Errors detected in the config. Confirm save?: 設定にエラーが検出されました。保存を確認しますか？
+Evaluated difficulty: 推定される難易度
+Exit: 終了
+expand: 展開
+Expire: 期限切れ
+Export All Code: すべてのコードをエクスポート
+Export as {0}: "{0}としてエクスポート"
+Extension (days): 最長延長期間（日）
+Extension Score Penalty: 延長提出による減点ルール
+Extra Files Config: 追加ファイル設定
+Failed to fetch registration data.: 登録データの取得に失敗しました。
+Failed to join the domain. You are already a member.: ドメインへの参加に失敗しました。あなたは既にメンバーです。
+Failed to parse subtask.: サブタスク情報の解析に失敗しました。
+Failed to parse testcase.: テストケース情報の解析に失敗しました。
+Feedback: フィードバック
+Field {0} or {1} validation failed.: フィールド {0} または {1} の検証に失敗しました。
+Field {0} validation failed.: フィールド {0} の検証に失敗しました。
+File have been deleted.: ファイルは削除されました。
+File have been renamed.: ファイルは名前が変更されました。
+File saved.: ファイルは正常に保存されました。
+file too large: ファイルが大きすぎます
+File uploaded successfully.: ファイルのアップロードに成功しました
+File: ファイル
+Filename: ファイル名
+Files: ファイル
+Filter: フィルタ
+First of Contest: コンテスト初の正解者
+First of Problem: 問題初の正解者
+fontFamily: フォント
+Footer: フッター
+Footnote: 注釈
+Forgot Password and/or Username: パスワードおよび/またはユーザー名を忘れた場合
+Forgot password or username?: パスワードまたはユーザー名を忘れた場合？
+Formula blocks: 数式ブロック
+Freeze scoreboard with N minutes remaining: コンテスト残りN分でスコアボードを凍結
+fs_upload: ファイルをアップロード
+Gender Visibility: 性別の可視性
+Gender: 性別
+Generate testdata is not supported for this problem type.: この問題タイプではテストデータの生成はサポートされていません。
+Generate Testdata: テストデータを生成
+Generate: 生成
+Gravatar URL Prefix: Gravatarアドレスプレフィックス
+Group / UID: グループまたはUID
+Group Assignment (Optional): グループ割り当て（任意）
+Group Name: 名称
+Hard Deadline: 最終締め切り
+Hash: ハッシュ
+Have ALL PERMISSIONS in this domain: このドメインで全ての権限を持つ
+He: 彼
+Help: ヘルプ
+Hidden: 非表示
+Hide all tags: すべてのタグを非表示
+Hide categorical tags: カテゴリタグを非表示
+Hide tags: タグを非表示
+Highlight discussions: 議論をハイライト
+Highlight: ハイライト
+Hint: ヒント
+Hint::icon::difficulty: Hydroにおける問題の難易度は、提出数、正解率、各提出の提出時間と評価結果に基づいて総合的に計算されるため、正確でない場合があります。
+Hint::icon::switch_account: スーパー管理者として、他の人のアカウントに直接切り替えることができます。
+Hint::icon::testdata: <a href="https://hydro.js.org/docs/Hydro/user/testdata" target="_blank">ドキュメントを参照してください</a>
+Hint::page::main: Hydroへようこそ！右上で登録またはログインできます。このヒントは一度しか表示されません。
+Hint::page::problem_detail: こちらは問題詳細ページです。右側の「オンラインプログラミングモードに入る」をクリックしてコードを書き始めることができます。
+Hint::page::problem_files: ファイルや圧縮ファイルを対応する領域にドラッグアンドドロップしてアップロードできます。ファイル名をクリックしてオンラインで編集するか、Ctrlを押しながらファイル名をクリックして個々のファイルをダウンロードできます。
+Hint::page::problem_main: こちらは問題リストページです。ページの右側でフィルタリングまたは検索できます。
+Hitokoto: 一言
+home_account: アカウント設定
+home_domain_account: 現在のドメインの設定
+home_domain_create: ドメインを作成
+home_domain: マイドメイン
+home_messages: サイト内メッセージ
+home_preference: プリファレンス設定
+home_security: セキュリティ設定
+homepage: ホームページ
+Homework Introduction: 宿題の紹介
+Homework Maintainer: 宿題管理者
+Homework scoreboard is not visible.: 現在、宿題の成績表は表示できません。
+homework_create: 宿題を作成
+homework_detail_problem_submit: 宿題の問題を提出
+homework_edit: 宿題を編集
+homework_main: 宿題
+homework_scoreboard: 宿題の成績表
+homework_status: 宿題の成績表
+Homework: 宿題
+Host: ホスト
+hour(s): 時間
+If enabled, source code will be emailed to you after the submission is accepted.: 有効にすると、提出が受理された後、ソースコードがメールで送信されます。
+If left blank, the built-in template of the corresponding language will be used.: 空欄にした場合、対応する言語の組み込みコードテンプレートが使用されます。
+Ignore trailing space and enter.: 行末のスペースと改行を無視。
+Images With Size: サイズを指定した画像
+Images: 画像
+Import from: からインポート
+Import Problem: 問題をインポート
+Import: インポート
+In 1 day: 1日後
+In 1 month: 1ヶ月後
+In 1 week: 1週間後
+In 3 days: 3日後
+In 3 hours: 3時間後
+In following contests: 以下のコンテストで
+In following homework: 以下の宿題で
+In following training plans: 以下の練習プランで
+In Progress: 進行中
+Information: 情報
+Initialize: 初期化
+Inline codes: インラインコード
+Inline formulas: インライン数式
+Input: 入力
+Insert Code: コードを挿入
+Insert Image: 画像を挿入
+Installed Modules: インストール済みモジュール
+Instead of copying the test data directly, the test data of the copied problems will be linked to the test data of the source problems (called the source test data). Thus, the copied problems can observe the changes in the source test data. The permissions of the test data of the copied problems follow the source test data, e.g., you still might not download them but the judges can. By uploading some new test data, the link will be broken and the new test data will be used.: テストデータは直接コピーされませんが、システムのテストデータは元の問題にリンクされます。そのため、元の問題のデータが変更された場合、コピーされた問題のデータも同時に変更されます。リンクされたテストデータの権限は元の問題に従います。例えば、あなたはデータをダウンロードできないかもしれませんが、ジャッジは可能です。問題設定ページで新しいテストデータをアップロードすることで、このデータリンクは削除され、今後はあなたの新しいテストデータが使用されます。
+Introduce must not exceed 500 characters and it will be shown in the list view.: 概要は500文字を超えてはならず、リストページに表示されます。
+Introduce: 概要
+Invalid password for user {0}.: ユーザー {0} のパスワードが無効です。
+Invalid RegExp: 無効な正規表現。
+Invalid: 無効
+Invitation Code: 招待コード
+IO: 入出力
+IOI(Strict): IOI(厳格)
+Is rated: ランク付け対象
+It works!: 成功しました！
+Italic: 斜体
+Join Domain to Create a Discussion: ドメインに参加してから議論を作成
+Join Domain to Submit: ドメインに参加してから提出
+Join Domain: ドメインに参加
+Join: 参加
+Judge Config: 評価設定
+Judge Status: 評価ステータス
+judge_extra_files: 評価用の追加ファイル
+judge_playground: 評価プレイグラウンド
+Judged At: 評価時間
+Judged By: 評価者
+Judging Queue: 評価キュー
+just now: たった今
+Keep current expiration: 現在の有効期限設定を維持
+Langs Config: 言語設定
+langs: 言語
+Language: 言語
+last active at: 最終活動日時
+last login at: 最終ログイン日時
+Last Submit At: 最終提出日時
+Last Update At: 最終更新日時
+LaTeX Expressions: LaTeX式
+Learn More: 詳細はこちら
+Leave blank to use numeric pid.: 空欄にすると、数字の問題番号を使用します。
+Leave empty for default: デフォルトを使用するには空欄のままにする
+Leave: 退出
+Ledo: Lodo
+Legacy mode: レガシーモード
+Light: 明るい
+Limit user to finish contest within N hours: ユーザーがN時間以内にコンテストを完了するように制限
+Limitations: 制限
+Links: リンク
+List View: リスト表示
+Live: 開催中
+Live...: 開催中…
+Loading editor...: エディタを読み込み中...
+Loading file...: ファイル内容を読み込み中...
+Location: 場所
+Login to Attend Contest: ログインしてコンテストに参加
+Login to Claim Homework: ログインして宿題を承認
+Login to Create a Discussion: ログインして議論を作成
+Login to Submit: ログインして提出
+Login with Github: Githubでログイン
+Login with Google: Googleでログイン
+Login: ログイン
+Logout All Sessions: すべてのセッションからログアウト
+Logout This Session: このセッションからログアウト
+Logout: ログアウト
+Lost Password: パスワードを忘れた
+Lucky: 運試し
+manage_config: 設定管理
+manage_dashboard: ダッシュボード
+manage_join_applications: ドメイン参加申請
+manage_module: モジュール管理
+manage_script: スクリプト管理
+manage_setting: システム設定
+manage_user_priv: ユーザー権限
+manage: 管理
+Manage: 管理
+Manager: マネージャー
+Mark Green: 緑色でマーク
+Mark Red: 赤色でマーク
+Mark Yellow: 黄色でマーク
+Memory Cost: メモリ使用量
+Memory Info: メモリ情報
+Memory: メモリ
+Message {0} not found.: メッセージ {0} が見つかりません。
+Messages: メッセージ
+Method: メソッド
+Microsoft Yahei: Microsoft Yahei
+Moderator: モデレーター
+Month: 月
+Monthly Popular: 月間人気
+More: もっと
+Most Upvoted Solutions: 最も評価の高い解答
+Move to subtask: サブタスクに移動
+Multi Platform Authenticator: クロスプラットフォーム認証
+My Domains: 私のドメイン
+My Files: 私のファイル
+My Profile: 私のプロフィール
+My Recent Submissions: 最近の提出履歴
+My Role: 私のロール
+name: 名前
+Name: 名前
+Nav Logo Dark: ナビゲーションロゴ（ダーク）
+Nav Logo Dark@2x: ナビゲーションロゴ（ダーク、2倍サイズ）
+Nav Logo Light: ナビゲーションロゴ（ライト）
+Nav Logo Light@2x: ナビゲーションロゴ（ライト、2倍サイズ）
+Network error: ネットワークエラー
+Never expire: 期限切れなし
+New dataset: 新しいテストデータ
+New Email: 新しいメールアドレス
+New file: 新しいファイル
+New filename(s): 新しいファイル名
+New Password: 新しいパスワード
+New Training Plan: 新しい練習プラン
+New: 作成
+No {0} at current.: 現在、{0}がありません。
+No changes to make.: 変更はありません。
+No comments so far...: これまでのところコメントはありません...
+No discussion yet...: まだ議論はありません…
+No group available: 利用可能なグループがありません
+No Permission to Attend Contest: コンテストに参加する権限がありません
+No Permission to Claim Homework: 宿題を承認する権限がありません
+No Permission to Create a Discussion: 議論を作成する権限がありません
+No Permission to Submit: 提出する権限がありません
+No problem.: 問題がありません。
+No solutions so far...: これまでのところ解答はありません...
+No submission language available for this problem.: この問題に利用できる提出言語はありません。
+No Submissions: 提出はありません
+No target available: 利用可能なターゲットがありません
+No testcase here: ここにはテストケースがありません
+No user is allowed to join this domain: ユーザーはこのドメインに自己参加できません
+no_translation_warn: ''
+None: なし
+Not Attended: 未参加
+Not available: 利用不可
+Not Claimed: 未承認
+Not Enrolled: 未参加
+Not joined yet: まだ参加していません
+Not started with a number: 数字で始まっていません
+Not wrapped with space: 両側にスペースがありません
+Numeric PID: 数字の問題ID
+objective: 客観問題
+Oh, the user doesn't have any contributions!: おっと、このユーザーはまだ問題を貢献していません〜
+Oh, the user hasn't created any discussions yet!: このユーザーはまだ議論を作成していません
+Oh, the user hasn't submitted yet!: このユーザーはまだ問題を提出していません _(:зゝ∠)_
+Oh, there are no tasks that match the filter!: おっと、フィルターに一致するタスクがありません。
+Oh, there is no submission!: おっと、まだ評価記録がありません！
+Oh, there is no task in the queue!: おっと、キューにタスクがありません。
+Ok: 確定
+Only A-Z, a-z, 0-9 and _ are accepted: A-Z, a-z, 0-9, および _ のみ許可されます
+Oops, there are no results.: おっと、結果がありません。
+Oops!: おっと！
+Open in Problem Set: 問題セットで開く
+Open Scratchpad: オンラインプログラミングモードに入る
+Open Since: 開始時間
+Open Source: オープンソース
+Open: オープン
+Operating System: オペレーティングシステム
+Ops: 運用
+Or, with automatically filled invitation code: または、招待コードが自動的に入力された場合
+Ordered List: 順序付きリスト
+Original content: 元のコンテンツ
+Original filename(s): 元のファイル名
+Original Score: 元のスコア
+OS Info: OS情報
+Output: 出力
+Over {0} problems: "{0}問以上"
+Owner: 所有者
+page.problem_detail.sidebar.show_category: クリックして表示
+page.training_detail.invalid_when_not_enrolled: 練習プランに参加していない場合、問題の詳細を閲覧することはできません。
+pager_first: « 最初のページ
+pager_last: 最後のページ »
+pager_next: 次のページ ›
+pager_previous: ‹ 前のページ
+Params: パラメータ
+Partic.: 参加人数
+Password reset mail has been sent to your email.: パスワードリセットメールがあなたのメールアドレスに送信されました。
+Password: パスワード
+Passwords don't match.: パスワードが一致しません。
+Path {0} not found.: パス {0} が見つかりません。
+Peak Memory: ピークメモリ
+Peak Time: ピーク時間
+perm_contest: コンテスト
+perm_discussion: 議論
+perm_general: 一般
+perm_homework: 宿題
+perm_problem_solution: 問題の解答
+perm_problem: 問題集
+perm_record: 記録
+perm_training: 練習
+Permission Control: 権限管理
+Permission: 権限
+Permissions: 権限
+Pick a problem randomly based on the current filter.: 現在のフィルター条件に基づいて問題をランダムに選択
+Pin: ピン留め
+PingFang SC: PingFang SC
+Plan: プラン
+Please attend contest to see the problems.: 問題を見るにはコンテストに参加してください。
+Please claim the assignment to see the problems.: 問題を見るには宿題を承認してください。
+Please follow the instructions on your device to complete the verification.: デバイスの指示に従って認証を完了してください。
+Please select at least one file to perform this operation.: この操作を実行するには、少なくとも1つのファイルを選択してください。
+Please select at least one role to perform this operation.: この操作を実行するには、少なくとも1つのロールを選択してください。
+Please select at least one user to perform this operation.: この操作を実行するには、少なくとも1人のユーザーを選択してください。
+Please set the balloon color for each problem first.: まず、各問題のバルーンの色を設定してください。
+Please wait until contest host unfreeze the scoreboard.: コンテストの主催者がスコアボードの凍結を解除するまでお待ちください。
+Preference Settings: プリファレンス設定
+preferredPrefix_hint: このオプションは問題番号を再配置するために使用されます。例えば、問題集で与えられた問題番号がP1001、P1002、P1003で、このオプションにTと入力した場合、インポート後の3つの問題番号はT1001、T1002、T1003になります。
+Preparing Upload...: アップロードを準備中...
+Pretest Data: 自己テストデータ
+Pretest Your Code: カスタムデータを使用してコードをテスト
+Pretest: 自己テスト
+Pretest?: 自己テスト？
+Privacy: プライバシー
+Privilege: 権限
+Problem {1} not found.: 問題 {1} が見つかりません。
+Problem Category: タグ
+Problem Data: 問題データ
+Problem ID cannot be a pure number. Leave blank if you want to use numberic id.: 問題IDは純粋な数字にすることはできません。自動的に数字のIDを割り当てたい場合は空欄にしてください。
+Problem ID List: 問題IDリスト
+Problem List: 問題リスト
+Problem Set: 問題集
+Problem Settings: 問題設定
+Problem Solution List: 解答一覧
+Problem Solution: 解答一覧
+Problem Tags Visibility: 問題タグの可視性
+Problem Tags: 問題タグ
+Problem Type: 問題タイプ
+problem_config: 評測設定
+problem_create: 問題を作成
+problem_edit: 問題を編集
+problem_import: 問題をインポート
+problem_main: 問題集
+problem_solution: 解答
+problem_submit: コード提出
+problem_type.communication: 通信問題
+problem_type.default: 伝統的問題
+problem_type.interactive: 対話型問題
+problem_type.objective: 客観問題
+problem_type.remote_judge: リモート評価問題
+problem_type.submit_answer: 回答提出型問題
+problem-category-delim: '|'
+problem-subcategory-delim: 、
+Problem: 問題
+problem.import.additional_file: '## 追加ファイル'
+problem.import.hint: '## ヒント'
+problem.import.input_format: '## 入力形式'
+problem.import.limit_and_hint: '## 制限'
+problem.import.output_format: '## 出力形式'
+problem.import.problem_description: '## 問題説明'
+problem.stats.sort.date: 提出時間
+problem.stats.sort.length: コード長
+problem.stats.sort.memory: メモリ使用量
+problem.stats.sort.time: 実行時間
+Problems Sets: 問題集
+Problems: 問題
+Processing...: 処理中...
+Profile Background Image: 背景画像
+Progress: 進捗
+Properties: プロパティ
+Public: 公開
+Published at: 投稿日
+QQ Group: QQグループ
+QQ Visibility: QQの可視性
+Quit Scratchpad: オンラインコーディングモードを終了
+Quote: 引用
+Rank: 順位
+Ranked Users: ランキングユーザー
+ranking: 順位
+Read all record codes: 全ての記録コードを読み取る
+Read data of own problems: 自分の問題データを読み取る
+Read data of problem: 問題データを読み取る
+Ready (☆▽☆): すぐ開始 (☆▽☆)
+Ready: 間もなく開始
+Recent {0} Records: 最近の{0}件の記録
+Recent Activities: 最近の活動
+Recent Problems: 最新の問題
+Recent Solutions: 最近作成された解答
+Recent Submissions: 最近の提出
+Recently Created Discussions: 最近作成された議論
+Recommended: おすすめ
+Record {0} not found.: 記録 {0} が存在しません。
+record_detail: 記録の詳細
+record_main: 提出の記録
+Records: 提出の記録
+Reference link copied to clipboard!: 引用リンクをクリップボードにコピーしました。
+Refresh Records: 提出の記録を更新
+Refresh: 更新
+RegExp supported, quote with "/": 正規表現に対応、"/"で囲む
+Registered at: 登録日
+Rejudge all submissions: 全提出を再評価
+Rejudge problems: 問題を再評価
+Rejudge records: 記録を再評価
+Rejudge: 再評価
+Related Discussions: 関連議論
+Related: 関連
+Remember me: ログイン状態を保持
+Remove Selected Group: 選択したグループを削除
+Remove Selected User: 選択したユーザーを削除
+Remove Selected: 選択項目を削除
+Remove this data: このデータを削除
+Remove: 削除
+Rename Selected: 選択項目の名前を変更
+Repeat Password: パスワードを再入力
+Replace with: 次と置き換える
+Reply discussions: 議論に返信
+Reply problem solutions: 解答に返信
+reply: 返信
+Reply: 返信
+Report: 通報
+Require Invitation Code: 招待コードが必要
+required: 必須
+Reset Password or Find Username: パスワードリセットまたはユーザー名検索
+Reset Password: パスワードリセット
+Reset: リセット
+Restart: 再起動
+Role Assignment: 役割割り当て
+Role has been updated to {0} for selected users.: 選択したユーザーの役割が {0} に更新されました。
+Role has been updated to {0}.: 役割が {0} に更新されました。
+Role name can only contains numbers, letters and underscores.: 役割名は数字、英字、アンダースコアのみ使用可能です。
+Role: 役割
+Roles: 役割
+RP Algorithm: RPアルゴリズム
+rpDetailText_contest: コンテスト
+rpDetailText_problem: 問題
+Rule: ルール
+Run Pretest: 自己テストを実行
+Run: 実行
+Sample Input: 入力例
+Sample Output: 出力例
+Save All Changes: 全ての変更を保存
+Saved session: 保存されたセッション
+Saving file...: ファイルを保存中...
+score canceled: 成績取消
+Score: スコア
+Scoreboard (Hidden): 成績表（非表示）
+Scoreboard: 成績表
+Scoring method: 採点方法
+Scripts: スクリプト
+Search: 検索
+Secret (visible to admins): 秘密（管理者のみ表示）
+Secret: 秘密
+Section: セクション
+Security: セキュリティ
+Select a node to create discussion.: 議論を作成するノードを選択
+Select a role: 役割を選択
+Select All: 全選択
+Select Category: カテゴリを選択
+Select None: 全解除
+Select User: ユーザーを選択
+Selected categories: 選択されたカテゴリ
+Selected files have been deleted.: 選択したファイルを削除しました。
+Selected files have been renamed.: 選択したファイルの名前を変更しました。
+Selected problems have been deleted.: 選択した問題を削除しました。
+Selected roles have been deleted.: 選択した役割を削除しました。
+Selected users have been removed from the domain.: 選択したユーザーをドメインから削除しました。
+Send By: 送信者
+Send Code after acceptance: 問題合格後にソースコードを送信
+Send Message: メッセージ送信
+Send Password Reset Email: パスワードリセットメール送信
+Send Verification Email: 確認メール送信
+Send: 送信
+Seperated with ',': 「,」で区切る
+Service Status: サービス状態
+Set Color: 色を設定
+Set Privilege: 権限を設定
+Set Role: 役割を設定
+Set Roles for Selected User: 選択ユーザーの役割を設定
+Set Roles for selected users: 選択ユーザーに役割を設定
+Set Score for Contest: コンテストのスコアを設定
+Set time and memory limits: 時間とメモリ制限を設定
+setting_customize: カスタマイズ
+setting_display: 表示設定
+setting_domain: ドメイン設定
+setting_info_domain: 個人情報
+setting_info: 個人情報
+setting_privacy: プライバシー
+setting_usage: 使用設定
+Settings: 設定
+Share: 共有
+She: 彼女
+Show all tags: 全てのタグを表示
+Show MOD badge: MODバッジを表示
+Show tags: タグを表示
+Show: 表示
+Sign In: ログイン
+SIGN IN: ログイン
+Sign up mail has been sent to your email.: 登録メールを送信しました。
+Sign Up Now: 今すぐ登録
+Sign Up: 登録
+Size: サイズ
+Solutions Liked: 高評価された解答
+Solutions: 解答
+Solve: 解く
+Solved: 解決済み
+Sorry, there are no problems in the problem set.: 問題集に問題がありません
+Sorry, there are no training plans.: 現在、訓練計画はありません。
+Sorry, there are no users in this domain.: このドメインにユーザーはいません。
+Sorry: 申し訳ありません
+Sort by: 並び替え
+Source type: ソースタイプ
+Source: ソース
+Standard mode: 標準モード
+Standard Program: 標準プログラム
+Star Topic: 議論をお気に入り
+Star: お気に入り
+Starred Users: フォロー中のユーザー
+Start at: 開始日時
+Statistics: 統計
+Status is hidden: ステータスは非表示
+Status: ステータス
+Submission language limit: 提出言語制限
+Submission Statistics: 提出統計
+Submission: 提出
+Submissions: 提出
+Submit At: 提出日時
+Submit By: 提出者
+Submit problem: 問題を提出
+Submit Solution: 評価を提出
+Submit Time: 提出時間
+Submit to Judge: 評価用に提出
+Submit Your Code: コードを正式評価に提出
+Submit: 提出
+Submitted: 提出済み
+Subtask {0}: サブタスク {0}
+Subtasks: サブタスク
+SuperUser: スーパー管理者
+SuperUser's Password: スーパー管理者のパスワード
+Support: サポート
+Switch account: アカウント切り替え
+Tags: タグ
+Task Settings: タスク設定
+tasks_list: タスク一覧
+Technical Information: 技術情報
+Temporary session: 一時セッション
+Terms of Service: 利用規約
+Test data comes from: テストデータの出所
+Testdata Config: テストデータ設定
+testdata: テストデータ
+Testdata: テストデータ
+Text: テキスト
+The 'default' role applies to ALL REGISTERED USER.: default ロールは<b>すべての登録ユーザー</b>に適用されます
+The contest is a flexible time contest. You need to complete the contest within a specified time after you attended.: このコンテストは柔軟時間制です。参加後、指定された時間内に完了する必要があります。
+The contest is ended. New submissions will be treated as correction submissions and will not be counted in the contest.: コンテストは終了しました。新しい提出は修正提出として扱われ、成績には含まれません。
+The group to join when user joining the domain.: ドメイン参加時に自動で参加するグループ
+The homework's deadline is due but in extension. You can still submit for this problem but your score will be penalized.: 宿題の締切は過ぎていますが延長期間中です。提出は可能ですが、得点は減点されます。
+The invitation code to enter to successfully join the domain. You can only use letters and numbers in the code and it should not be longer than 64 characters.: このドメインに参加するための招待コードです。英数字のみ使用でき、64文字以内である必要があります。
+The invitation code you provided is invalid.: 提供された招待コードは無効です。
+The link will be expired at {0}: リンクは {0} に失効します
+The role to assign when user joining the domain.: ユーザーがこのドメインに参加した際に割り当てられるロール
+The scoreboard was frozen with {0} minutes remaining at {1} - submissions in the last {0} minutes of the contest are still shown as pending.: スコアボードは {1} に残り {0} 分で凍結されました - 最後の {0} 分間の提出は保留として表示されます。
+The uploaded file is too long.: アップロードしたファイルが長すぎます
+The user is already a member of the domain.: ユーザーはすでにこのドメインのメンバーです
+The user is too lazy to leave something here...: このユーザーは面倒がって何も書いていません (´・ω・｀)
+Their account will not be deleted and they will be with the guest role until they re-join the domain.: アカウントは削除されず、再参加するまでゲストロールでアクセスします
+Theme: テーマ
+There are no contests...: コンテストがありません…
+There is no homework so far ╰(*°▽°*)╯: 宿題はまだありません ╰(*°▽°*)╯
+This contest is not live.: コンテストは開始していません
+This email was sent by {0} automatically, and please do not reply directly.: このメールは {0} から自動送信されました。直接返信しないでください。
+This homework is not open and you cannot view problems.: 宿題はまだ公開されていないため、問題を閲覧できません
+This homework is not open.: 宿題はまだ提出を受け付けていません
+This is the current session: 現在のセッションです
+This message will be presented to those whose submissions are accepted.: このメッセージは提出が承認されたユーザーに表示されます
+This page is only for pasting code from other sources.: このページは他のソースからコードを貼り付けるためのものです
+This page needs JavaScript to work.: このページは JavaScript が必要です
+This section cannot be challenged at present, so please complete the following sections first: このセクションは現在挑戦できません。先に以下のセクションを完了してください
+This type of files are not allowed to be uploaded.: この種類のファイルはアップロードできません
+This user was banned.: このユーザーは凍結されました
+Time (Seconds): 経過時間（秒）
+Time Cost: 所要時間
+Time Extension: 延長
+Time: 時間
+timeago_locale: zh_CN
+Timezone: タイムゾーン
+title: タイトル
+Title: タイトル
+To get a better editing experience, with code highlighting and test runs, please go back to the problem detail page and use 'Open Scratchpad' button.: より快適な編集体験（コードのハイライトやテスト実行など）を得るには、問題詳細ページに戻り「オンライン編集モードに入る」ボタンを押してください。
+To join the domain, users can click the "Join Domain" button on "My Domain" page.: ドメインに参加するには、「マイドメイン」ページの「ドメインに参加」ボタンをクリックします
+Toggle Pretest Panel: 自動テストパネル切替
+Toggle Preview: プレビュー切替
+Toggle Records Panel: 評価記録パネル切替
+Tools: ツール
+Total Score: 合計得点
+Total Time (Seconds): 合計時間（秒）
+Total Time: 合計時間
+Total: 合計
+Training requirement is not satisfied.: トレーニング条件を満たしていません
+training_create: トレーニング作成
+training_edit: トレーニング編集
+training_main: トレーニング
+Training: トレーニング
+Transports: サポートタイプ
+Tried: 試行
+Two Factor Authentication Code: 二要素認証コード
+Two Factor Authentication: 二要素認証
+Type: タイプ
+UI Language: ユーザーインターフェース言語
+Uncompleted: 未完了
+Unique: ユニーク
+Unknown field {0}.: 不明なフィールド {0}
+Unknown: 不明
+Unlimited: 無制限
+Unordered List: 箇条書き
+Unrank: 星付け解除
+Unstar Topic: トピックのブックマーク解除
+Unstar: ブックマーク解除
+Unsupported configure this type of problem. Please refer to the documentation.: このタイプの問題は簡易設定に対応していません。ドキュメントを参照してください
+Update Permission: 権限を更新
+Update Settings: 設定を更新
+Update: 更新
+Upload Failed: アップロード失敗
+Upload File: ファイルをアップロード
+Upload Problem: 問題をアップロード
+Upload: アップロード
+Uploaded By: アップロード者
+Uploading files...: ファイルをアップロード中...
+Uploading... ({0}%): アップロード中... ({0}%)
+Uploading...: アップロード中...
+Upvote: 高評価
+Usage exceeded.: 使用量が上限を超えました
+Use admin specificed: 管理者が指定
+Use algorithm calculated: アルゴリズムで計算
+Use Authenticator: 認証器を使用
+Use average of above: 上記の平均値を使用
+Use Password: パスワードを使用
+Use Subtasks Mode: サブタスクモードを使用
+Use TFA Code: 二要素認証コードを使用
+User {0} already exists.: ユーザー {0} はすでに存在します
+User {0} not found.: ユーザー {0} が見つかりません
+User can join this domain by visiting the following URL: 以下のURLにアクセスすると、このドメインに参加できます
+User ID: ユーザー ID
+User Privilege: ユーザー権限
+User will no longer be allowed to join the domain after expiration.: 有効期限後、このドメインに参加できなくなります
+user_detail: ユーザー
+user_extra_files: ユーザー追加ファイル
+user_login: ログイン
+user_logout: ログアウト
+user_lostpass_mail_sent: パスワードリセットメールを送信しました
+user_lostpass_with_code: パスワードをリセット
+user_lostpass: パスワードを忘れた
+user_register_with_code: 登録
+user_register: 登録
+User-defined role: ユーザー定義ロール
+User: ユーザー
+Username / UID: ユーザー名 / UID
+Username: ユーザー名
+Users will have to manually join the domain first before selected roles can be applied.: 指定したロールを適用するには、ユーザーが先にドメインへ手動で参加する必要があります
+Users with those roles will be removed from the domain.: これらのロールを持つユーザーはドメインから削除されます
+Users: ユーザー
+Using your {0} universal account: あなたの {0} 共通アカウントを使用
+Valid for registered users who are not members of the domain: ドメインに属していない登録ユーザーに有効
+Valid for visitors: 未ログインの訪問者に有効
+Version: バージョン
+Videos: 動画
+View contest scoreboard: コンテストのスコアボードを見る
+View Contest: コンテストを見る
+View contests: コンテストを見る
+View Details: 詳細を見る
+View discussions: 議論を見る
+View hidden contest submission status and scoreboard: 非公開のコンテスト提出状況とスコアボードを見る
+View hidden homework submission status and scoreboard: 非公開の宿題提出状況とスコアボードを見る
+View hidden problems: 非公開の問題を見る
+View homework scoreboard: 宿題のスコアボードを見る
+View homework: 宿題を見る
+View Homework: 宿題を見る
+View or create discussion: 議論を見る / 作成する
+View or submit solution: 解答を見る / 提出する
+View Owned Problems: 自分の問題を見る
+View Owned Training Plans: 自分のトレーニング計画を見る
+View problem solutions: 問題の解答を見る
+View Problem: 問題を見る
+View problems: 問題を見る
+View this domain: このドメインを見る
+View training plans: トレーニング計画を見る
+View Training: トレーニングを見る
+View: 表示
+Visible to registered users: 登録ユーザーに表示
+Visit: 訪問
+Vote problem solutions: 解答に投票
+Vote: 投票
+warn::admin:unsupportedbrowser: "スーパー管理者であるにもかかわらず、古すぎるブラウザを使用しています。\nこれらのブラウザは Hydro 管理パネルの一部機能をサポートしない可能性があります。\n最新の Chrome ブラウザへのアップグレードを強くお勧めします。"
+We will check code similarity after this contest.: コンテスト終了後にコードの類似性を確認します
+WeChat Visibility: WeChat 表示設定
+WeChat: WeChat
+Week: 週
+WenQuanYi Micro Hei: 文泉驛
+What is domain?: ドメインとは？
+What is this?: これは何ですか？
+What's domain?: ドメインとは？
+What's script?: スクリプトとは？
+What's this?: これは何ですか？
+Whether to show tags in the problem list.: 問題一覧にタグを表示するかどうか
+wiki_help: ヘルプ
+Will be used as the domain icon.: ドメインアイコンとして使用されます
+With this feature, you can copy problems that you can view from a domain to some other domain. Their title, content, tags and categories will be copied. However, their test data are not copied directly.: この機能を使うと、あるドメインで閲覧できる問題を他のドメインにコピーできます。タイトル、説明、タグ、カテゴリーはコピーされますが、テストデータは直接コピーされません
+Write Your Comment: コメントを書く
+Write Your Solution: 解答を書く
+Year: 年
+You are currently in legacy mode. Some additional features will be unavailable. We strongly recommend switching to standard mode on a modern browser.: 現在レガシーモードです。一部機能が使えません。モダンブラウザで標準モードへの切り替えを強くお勧めします
+You are invited to join {0}: '{0} に招待されています'
+You are not allowed to join the domain. The link is either invalid or expired.: このドメインに参加できません。リンクが無効か期限切れです
+You can also upload your avatar to Gravatar and it will be automatically updated here.: <a href="https://gravatar.com/">Gravatar</a> にアバターをアップロードすると、ここに自動反映されます
+You can create your own training plans and share them with others.: 自分のトレーニング計画を作成し、他者と共有できます
+You cannot submit for this problem because the contest is ended. You can click "Open in Problem Set" to view this problem in normal mode.: コンテストが終了したため、この問題を提出できません。「問題集で開く」をクリックすると通常モードで閲覧・提出できます
+You cannot submit for this problem because the homework's deadline is due.: 宿題の締切が過ぎたため、この問題は提出できません
+You cannot visit this domain.: このドメインを閲覧できません
+You don't have permission to upload file.: ファイルをアップロードする権限がありません
+You don't have the required permission ({0}) in this domain.: このドメインで必要な権限 ({0}) がありません
+You don't have the required privilege.: 必要な特権がありません
+You don't own any domain and don't have privilege to create domain.: ドメインを所有しておらず、作成する特権もありません
+You have not submitted any solutions for this problem: この問題に対して解答を提出していません
+You have permission to create problems for this domain.: このドメインで問題を作成する権限があります
+You have uncompleted domain creation operation. You can click "Continue" to finish the creation.: 未完了のドメイン作成があります。「続行」をクリックして作成を完了できます
+You haven't attended this contest yet.: このコンテストにまだ参加していません
+You haven't claimed this homework yet.: この宿題をまだ引き受けていません
+You may want to create a new role in 'Manage Role' page.: 「ロール管理」ページで新しいロールを作成できます
+You need to enter the invitation code to join the domain.: ドメインに参加するには招待コードを入力してください
+You received a system message, click here to view.: システム通知を受信しました。クリックして表示
+You're not logged in.: ログインしていません
+You've already attended this contest.: このコンテストにはすでに参加しています
+You've already claimed this homework.: この宿題はすでに引き受けています
+You've already voted.: すでに投票済みです
+Your account has two factor authentication enabled. Please choose an authenticator to verify.: アカウントに二要素認証が有効です。認証器を選択して認証してください
+Your browser does not support WebAuthn or you are not in secure context.: お使いのブラウザは WebAuthn に対応していないか、安全な環境ではありません
+Your Device: あなたのデバイス
+Your permission: あなたの権限
+Your role: あなたのロール
+
