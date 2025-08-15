@@ -94,7 +94,7 @@
   {% set UserContext = Object.create(UserContext) %}
 </head>
 
-<body style="background-color: lightblue; color: darkblue; font-family: "Noto Sans JP", sans-serif; font-optical-sizing: auto; font-weight: 500; font-style: normal;">
+<body>
   {% if not isIE(handler.request.headers['user-agent']) and not handler.session.legacy %}
   <script type="text/javascript" src="/resource/{{ UiContext.constantVersion }}/entry.js"></script>
   <script type="text/javascript"
