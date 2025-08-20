@@ -219,7 +219,7 @@ Contributions: 貢献
 Copy Email: メールアドレスをコピー
 Copy from: からコピー
 Copy Link: リンクをコピー
-Copy QQ Number: QQ番号をコピー
+Copy QQ Number: 連絡先をコピー
 Copy Selected: 選択したものをコピー
 Copy WeChat Account: WeChatアカウントをコピー
 Copy: コピー
@@ -738,8 +738,8 @@ Progress: 進捗
 Properties: プロパティ
 Public: 公開
 Published at: 投稿日
-QQ Group: QQグループ
-QQ Visibility: QQの可視性
+QQ Group: LINEグループ
+QQ Visibility: LINEの可視性
 Quit Scratchpad: オンラインコーディングモードを終了
 Quote: 引用
 Rank: 順位
@@ -1086,7 +1086,7 @@ You cannot visit this domain.: このドメインを閲覧できません
 You don't have permission to upload file.: ファイルをアップロードする権限がありません
 You don't have the required permission ({0}) in this domain.: このドメインで必要な権限 ({0}) がありません
 You don't have the required privilege.: 必要な特権がありません
-You don't own any domain and don't have privilege to create domain.: ドメインを所有しておらず、作成する特権もありません
+You don't own any domain and don't have privilege to create domain.: ドメインを所有しておらず、作成する権限もありません
 You have not submitted any solutions for this problem: この問題に対して解答を提出していません
 You have permission to create problems for this domain.: このドメインで問題を作成する権限があります
 You have uncompleted domain creation operation. You can click "Continue" to finish the creation.: 未完了のドメイン作成があります。「続行」をクリックして作成を完了できます
