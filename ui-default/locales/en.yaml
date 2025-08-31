@@ -7,7 +7,7 @@ __langname: 日本語
 '{0} is a moderator of this domain.': '{0}はこのドメインの管理人です。'
 '{0} is a superuser.': '{0}はスーパーユーザーです。'
 '{0} limit exceeded (limit: {2} operations in {1} seconds).': '{0}は制限を超えました（制限：{1}秒以内に{2}回の操作）。'
-'{0} problem(s) selected': '{0} 道題目が選択されました'
+'{0} problem(s) selected': '選択中の項目 {0}'
 '{0} problems': '問題 {0} 番'
 '{0} sections': '{0} 小節'
 '{0} solutions': '{0} 条題解'
@@ -68,9 +68,9 @@ about: について
 About: について
 AC Message: メッセージを通じて
 Accept: 受け入れる
-Accepted Problems: 受け入れられた問題
-Accepted Ratio: 受け入れ率
-Accepted: 受け入れられた
+Accepted Problems: クリアに成功した問題
+Accepted Ratio: クリアに成功率
+Accepted: クリアに成功
 Access Control: アクセス制御
 According to the contest rules, you cannot view your submission details at current.: コンテストのルールにより、現在あなたの提出詳細を表示することはできません。
 Account Settings: アカウント設定
