@@ -5,14 +5,14 @@
 {% import "components/noscript_note.html" as noscript_note with context %}
 {% import "components/user.html" as user with context %}
 <!DOCTYPE html>
-<html data-page="{{ page_name }}" data-layout="{{ layout_name }}"
-  class="layout--{{ layout_name }} page--{{ page_name }} theme--{{ (handler.user|default({})).theme|default('default') }} nojs"
+<html data-page="{{ page_name }}" data-layout="{{ layout_name }}" 
+  class="layout--{{ layout_name }} page--{{ page_name }} theme--{{ (handler.user|default({})).theme|default('default') }} nojs" 
   lang="{{ UserContext.viewLang }}" data-app="Hydro">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   {# import google font #}
@@ -30,14 +30,11 @@
   <link rel="canonical" href="{{ model.system.get('server.url') }}{{ handler.context.request.url.substring(1) }}">
   {% endif %}
   <meta name="theme-color" content="#56758f">
-  {% block ogp_site %}
-  <meta property="og:site_name"
-    content="{{ (handler.domain|default({ui:[]})).ui.name|default(model.system.get('server.name')) }}" />
+  {% block ogp %}
+  <meta property="og:site_name" content="{{ (handler.domain|default({ui:[]})).ui.name|default(model.system.get('server.name')) }}" />
+  <meta property="og:title" content="{{ handler.renderTitle(page_name) }}" />
   <meta property="og:url" content="{{ model.system.get('server.url') }}{{ handler.request.path.slice(1) }}" />
   <meta property="og:image" content="{{ UiContext.cdn_prefix }}favicon-96x96.png" />
-  {% endblock %}
-  {% block ogp %}
-  <meta property="og:title" content="{{ handler.renderTitle(page_name) }}" />
   {% endblock %}
   <title>{{ handler.renderTitle(page_name) }}</title>
   <style>
@@ -52,60 +49,46 @@
       "Consolas",
       "Lucida Console",
       "monospace";
-
-      --font-ligatures: {
-          {
-          "normal" if UserContext.codeFontLigatures else "none"
-        }
-      }
-
-      !important;
+      --font-ligatures: {{ "normal" if UserContext.codeFontLigatures else "none" }} !important;
     }
+    
+    .section{border-radius:10px}
 
-      {% if not isIE(handler.request.headers['user-agent']) and not handler.session.legacy %}
-
-    #panel {
-      display: flex;
-      flex-direction: column;
-    }
-
-      {% endif %}
+    {% if not isIE(handler.request.headers['user-agent']) and not handler.session.legacy %}
+      #panel { display: flex; flex-direction: column; }
+    {% endif %}
   </style>
   {% if process.env.DEV %}
-  <script src="/default.theme.js?version={{ global.Hydro.version['ui-default'] }}"></script>
-  <link rel="stylesheet" media="all" href="/theme.css?version={{ global.Hydro.version['ui-default'] }}">
+    <script src="/default.theme.js?version={{ global.Hydro.version['ui-default'] }}"></script>
+    <link rel="stylesheet" media="all" href="/theme.css?version={{ global.Hydro.version['ui-default'] }}">
   {% else %}
-  <link rel="stylesheet" media="all"
-    href="{{ UiContext.cdn_prefix }}theme-{{ global.Hydro.version['ui-default'] }}.css">
+    <link rel="stylesheet" media="all" href="{{ UiContext.cdn_prefix }}theme-{{ global.Hydro.version['ui-default'] }}.css">
   {% endif %}
   {% if not isIE(handler.request.headers['user-agent']) and not handler.session.legacy %}
-  <script>
-    var _htmlNode = document.documentElement;
-    _htmlNode.className = _htmlNode.className.replace(' nojs', ' hasjs');
-    window.UiContext = '{{ UiContext|json|jsesc|safe }}';
-    window.UserContext = '{{ UserContext|json|jsesc|safe }}';
-  </script>
-  {% endif %}
+    <script>
+      var _htmlNode = document.documentElement;
+      _htmlNode.className = _htmlNode.className.replace(' nojs', ' hasjs');
+      var UiContext = '{{ UiContext|json|jsesc|safe }}';
+      var UserContext = '{{ UserContext|json|jsesc|safe }}';
+    </script>
+  {% endif %}  
   {% set UiContext = Object.create(UiContext) %}
   {% set UserContext = Object.create(UserContext) %}
 </head>
 
 <body>
   {% if not isIE(handler.request.headers['user-agent']) and not handler.session.legacy %}
-  <script type="text/javascript" src="/resource/{{ UiContext.constantVersion }}/entry.js"></script>
-  <script type="text/javascript"
-    src="{{ UiContext.cdn_prefix }}resource/{{ global.Hydro.version['ui-default'] }}/lang-{{ _('__id') }}.js"></script>
-  <script type="text/javascript"
-    src="{{ UiContext.cdn_prefix }}hydro-{{ global.Hydro.version['ui-default'] }}.js{% if process.env.DEV %}?version=dev{% endif %}"></script>
+    <script type="text/javascript" src="/resource/{{ UiContext.constantVersion }}/entry.js"></script>
+    <script type="text/javascript" src="{{ UiContext.cdn_prefix }}resource/{{ global.Hydro.version['ui-default'] }}/lang-{{ _('__id') }}.js"></script>
+    <script type="text/javascript" src="{{ UiContext.cdn_prefix }}hydro-{{ global.Hydro.version['ui-default'] }}.js"></script>
   {% endif %}
   {% block body %}{% endblock %}
   {% block script %}{% endblock %}
   {% if not isIE(handler.request.headers['user-agent']) and not handler.session.legacy %}
-  <script>
-    window.UiContextNew = '{{ UiContext|json|jsesc|safe }}';
-    window.UserContextNew = '{{ UserContext|json|jsesc|safe }}';
-  </script>
+    <script>
+      var UiContextNew = '{{ UiContext|json|jsesc|safe }}';
+      var UserContextNew = '{{ UserContext|json|jsesc|safe }}';
+    </script>
   {% endif %}
 </body>
-
 </html>
