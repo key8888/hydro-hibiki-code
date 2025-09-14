@@ -25,13 +25,13 @@
                 {% elif udoc.realname_flag == 1%}
                 <span class="icon icon-star"></span>
                 {% endif %}
-            
+
                 {% if handler.user.hasPerm(perm.PERM_VIEW_DISPLAYNAME) and udoc.realname_name %}
-                  [{{ udoc.realname_name }}]{{ udoc.uname }}
+                [{{ udoc.realname_name }}]{{ udoc.uname }}
                 {% elif handler.user.hasPerm(perm.PERM_VIEW_DISPLAYNAME) and udoc.displayName %}
-                  ({{ udoc.displayName }}){{ udoc.uname }} 
+                ({{ udoc.displayName }}){{ udoc.uname }}
                 {% else %}
-                  {{ udoc.uname }}
+                {{ udoc.uname }}
                 {% endif %}
 
 
@@ -50,14 +50,14 @@
 
               {% if udoc['coin_all'] > 0 %}
               <p>
-                当前硬币数量: {{ udoc['coin_now'] }} （累计获取硬币数量：{{ udoc['coin_all'] }}）:
+                現在のコイン数: {{ udoc['coin_now'] }} （累計獲得コイン数：{{ udoc['coin_all'] }}）:
                 <a class="profile-header__contact-item" href="/coin/bill/{{ udoc['_id'] }}" target="_blank"
-                  data-tooltip="查看硬币明细">
+                  data-tooltip="コインの詳細を確認">
                   <span class="icon icon-search "></span>
                 </a>
               </p>
               {% else %}
-              <p> 暂未获得硬币 </p>
+              <p> まだコインを獲得していません </p>
               {% endif %}
 
               <hr />
