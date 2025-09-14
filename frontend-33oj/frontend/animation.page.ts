@@ -175,10 +175,23 @@
   console.log("test from animation.page.ts");
 
   window.addEventListener("load", () => {
+    // 対象の要素を取得
+    const navList = document.querySelector<HTMLOListElement>(
+      "ol.nav__list.nav__list--secondary.clearfix"
+    );
+
+    if (navList) {
+      // 不可視にする
+      navList.style.display = "none";
+    }
+  });
+
+  window.addEventListener("load", () => {
     const logoSelector =
       // 'img.nav__logo[src="/components/navigation/nav-logo-small_darks.png"]';
       'img.nav__logo';
     const img = document.querySelector<HTMLImageElement>(logoSelector);
+
 
     if (!img) {
       console.log("ロゴ画像が見つかりませんでした（selector mismatch）。");
@@ -278,6 +291,16 @@
     console.warn("親要素が特定できなかったため、その場で置換しました。");
   });
 
+  window.addEventListener("load", () => {
+    // 対象の要素を取得
+    const navList = document.querySelector<HTMLOListElement>(
+      "ol.nav__list.nav__list--secondary.clearfix"
+    );
 
+    if (navList) {
+      // 可視にする
+      navList.style.display = "";
+    }
+  });
 
 })();
