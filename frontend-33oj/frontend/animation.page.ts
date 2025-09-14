@@ -176,7 +176,7 @@
 
   window.addEventListener("load", () => {
     const logoSelector =
-      'img.nav__logo[src="/components/navigation/nav-logo-small_dark.png"]';
+      'img.nav__logo[src="/components/navigation/nav-logo-small_darks.png"]';
     const img = document.querySelector<HTMLImageElement>(logoSelector);
 
     if (!img) {
