@@ -174,7 +174,7 @@
 
   console.log("test from animation.page.ts");
 
-  window.addEventListener("loadedmetadata", () => {
+  window.addEventListener("load", () => {
     const logoSelector =
       'img.nav__logo[src="/components/navigation/nav-logo-small_dark.png"]';
     const img = document.querySelector<HTMLImageElement>(logoSelector);
