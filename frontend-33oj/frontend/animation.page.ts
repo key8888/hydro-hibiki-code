@@ -175,15 +175,70 @@
   console.log("test from animation.page.ts");
 
   window.addEventListener("load", () => {
-    const logoSelector = 'img.nav__logo[src="/components/navigation/nav-logo-small_dark.png"]';
-    const logoElement = document.querySelector<HTMLImageElement>(logoSelector);
+    const logoSelector =
+      'img.nav__logo[src="/components/navigation/nav-logo-small_dark.png"]';
+    const img = document.querySelector<HTMLImageElement>(logoSelector);
 
-    if (logoElement) {
-      logoElement.remove();
-      console.log("ロゴ要素を削除しました。");
-    } else {
+    if (!img) {
       console.log("指定されたロゴ要素は存在しませんでした。");
+      return;
+    }
+
+    // 位置保持のために親と次ノードを記憶
+    const parent = img.parentElement;
+    const next = img.nextSibling;
+
+    // 画像の実寸（レイアウト上）を取得して新ロゴへ反映
+    const rect = img.getBoundingClientRect();
+    const width = Math.max(1, Math.round(rect.width));
+    const height = Math.max(1, Math.round(rect.height));
+    const fontSize = Math.max(12, Math.floor(height * 0.48)); // 高さに対して≈48%
+
+    // 先に削除
+    img.remove();
+
+    // 置き換え用の<a>を作成
+    const a = document.createElement("a");
+    a.textContent = "hibikicode";
+    a.href = "/"; // 必要に応じて変更
+    a.setAttribute("aria-label", "hibikicode - home");
+
+    // インラインスタイル（style属性）でロゴの見た目を作成
+    a.setAttribute(
+      "style",
+      [
+        "display:inline-flex",
+        "align-items:center",
+        "justify-content:center",
+        `width:${width}px`,
+        `height:${height}px`,
+        // 読みやすい汎用フォント
+        'font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans"',
+        `font-size:${fontSize}px`,
+        "font-weight:800",
+        "letter-spacing:0.5px",
+        "text-transform:lowercase",
+        "text-decoration:none",
+        "color:#111",            // ダークテーマなら#fffなどに変更してね
+        "background:transparent",
+        "border-radius:4px",
+        "user-select:none",
+        "cursor:pointer",
+      ].join(";")
+    );
+
+    // 同じ場所に差し戻し
+    if (parent) {
+      if (next) parent.insertBefore(a, next);
+      else parent.appendChild(a);
+      console.log("ロゴを 'hibikicode' に置き換えました。");
+    } else {
+      // 念のためのフォールバック
+      document.body.prepend(a);
+      console.log("親要素が見つからず、body先頭に追加しました。");
     }
   });
+
+
 
 })();
