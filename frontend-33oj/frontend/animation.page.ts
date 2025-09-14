@@ -184,80 +184,62 @@
       return;
     }
 
-    const parent = img.parentElement;
-    const parentRect = parent?.getBoundingClientRect();
-    const imgRect = img.getBoundingClientRect();
+    // 親要素を取得
+    const li = img.closest("li.nav__list-item");
+    const ol = img.closest("ol.nav_list"); // ← 青くなった ol 要素
 
-    // 親の高さ優先で取得（なければ画像の描画高さ）
-    const containerH = Math.round(parentRect?.height || imgRect.height || 32);
-    const fontSize = Math.max(12, Math.floor(containerH * 0.52)); // 視覚的バランス調整
+    if (!li || !ol) {
+      console.log("親要素が見つかりませんでした。");
+      return;
+    }
 
-    // 親が<a>でも崩れないように、置換用の span（行内ブロック）を作成
-    const wrapper = document.createElement("span");
+    // ol の高さを取得
+    const olRect = ol.getBoundingClientRect();
+    const containerH = Math.round(olRect.height);
+    const fontSize = Math.max(12, Math.floor(containerH * 0.5));
 
-    // wrapper で縦中央を保証：height と line-height を同値に
-    wrapper.setAttribute(
+    // 新しいロゴを作成
+    const logoWrapper = document.createElement("a");
+    logoWrapper.href = "/";
+    logoWrapper.setAttribute("aria-label", "hibikicode - home");
+
+    logoWrapper.setAttribute(
       "style",
       [
-        "display:inline-block",
-        `height:${containerH}px`,
-        `line-height:${containerH}px`, // ★ これが効く
-        "vertical-align:middle",       // 行ボックス内の位置合わせ
-        "padding:0 6px",
-        "border-radius:6px",
-        "user-select:none",
+        "display:flex",              // Flexbox
+        "align-items:center",        // ★ 親の高さの中央に配置
+        "justify-content:flex-start",
+        `height:${containerH}px`,    // ol と同じ高さに合わせる
         "text-decoration:none",
+        "user-select:none",
         "background:transparent",
         "cursor:pointer",
-        // 見た目向上
+        "padding:0 6px",
+        "border-radius:6px",
+        `font-size:${fontSize}px`,
+        "font-family:ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\"",
+        "font-weight:800",
+        "letter-spacing:0.2px",
         "-webkit-font-smoothing:antialiased",
         "text-rendering:optimizeLegibility",
-        "font-family:ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\"",
       ].join(";")
     );
 
-    // 内側テキストは line-height を 1 に戻して基線ズレを無くす
-    const baseTextStyle = [
-      "display:inline-block",
-      "line-height:1",
-      "vertical-align:middle",
-      `font-size:${fontSize}px`,
-      "font-weight:800",
-      "letter-spacing:0.2px",
-    ].join(";");
-
     const spanHibiki = document.createElement("span");
     spanHibiki.textContent = "hibiki";
-    spanHibiki.setAttribute(
-      "style",
-      [baseTextStyle, "color:#e11d48" /* ローズ系 */].join(";")
-    );
+    spanHibiki.style.color = "#e11d48"; // hibiki 赤系
 
     const spanCode = document.createElement("span");
     spanCode.textContent = "code";
-    spanCode.setAttribute(
-      "style",
-      [baseTextStyle, "margin-left:2px", "color:#0f172a" /* 濃スレート */].join(";")
-    );
+    spanCode.style.cssText = "color:#0f172a; margin-left:2px;";
 
-    // クリック先が必要なら、wrapper の中に <a> を入れてもOK
-    // ここでは親がリンクでないときだけ <a> を作って包む
-    const isParentLink = parent && parent.tagName.toLowerCase() === "a";
-    if (!isParentLink) {
-      const link = document.createElement("a");
-      link.href = "/";
-      link.setAttribute("aria-label", "hibikicode - home");
-      link.setAttribute("style", "text-decoration:none; color:inherit;");
-      link.append(spanHibiki, spanCode);
-      wrapper.appendChild(link);
-    } else {
-      wrapper.append(spanHibiki, spanCode);
-    }
+    logoWrapper.appendChild(spanHibiki);
+    logoWrapper.appendChild(spanCode);
 
-    // 画像をその場で置換（位置ずれを最小化）
-    img.replaceWith(wrapper);
+    // 画像と置き換え
+    img.replaceWith(logoWrapper);
 
-    console.log("縦中央&色分割の文字ロゴに置き換えました。");
+    console.log("ロゴを ol 高さの中央に合わせて置き換えました。");
   });
 
 
