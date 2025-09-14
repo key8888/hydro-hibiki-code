@@ -174,107 +174,91 @@
 
   console.log("test from animation.page.ts");
 
-window.addEventListener("load", () => {
-  const logoSelector =
-    'img.nav__logo[src="/components/navigation/nav-logo-small_dark.png"]';
-  const img = document.querySelector<HTMLImageElement>(logoSelector);
+  window.addEventListener("load", () => {
+    const logoSelector =
+      'img.nav__logo[src="/components/navigation/nav-logo-small_dark.png"]';
+    const img = document.querySelector<HTMLImageElement>(logoSelector);
 
-  if (!img) {
-    console.log("指定されたロゴ要素は存在しませんでした。");
-    return;
-  }
-
-  const parent = img.parentElement;
-  const next = img.nextSibling;
-
-  // 親の高さ（最優先）→ 画像の描画高さ → フォールバック
-  const parentRect = parent?.getBoundingClientRect();
-  const imgRect = img.getBoundingClientRect();
-  const containerH =
-    Math.round(parentRect?.height || imgRect.height || 32);
-
-  // 文字サイズは親高さに連動（最低12px）
-  const fontSize = Math.max(12, Math.floor(containerH * 0.5)); // だいたい高さの50%
-
-  // 置換する要素（親が<a>ならSPAN、そうでなければ<A>を作成してリンク付与）
-  const isParentLink = parent && parent.tagName.toLowerCase() === "a";
-  const wrapper = document.createElement(isParentLink ? "span" : "a");
-
-  if (!isParentLink) {
-    (wrapper as HTMLAnchorElement).href = "/";
-    wrapper.setAttribute("aria-label", "hibikicode - home");
-  }
-
-  // hibiki と code を分ける
-  const spanHibiki = document.createElement("span");
-  spanHibiki.textContent = "hibiki";
-  spanHibiki.setAttribute(
-    "style",
-    [
-      "font-weight:800",
-      "letter-spacing:0.2px",
-      // 好みで色調整してね（例: ローズとスレート）
-      "color:#e11d48", // hibiki 部分
-    ].join(";")
-  );
-
-  const spanCode = document.createElement("span");
-  spanCode.textContent = "code";
-  spanCode.setAttribute(
-    "style",
-    [
-      "font-weight:800",
-      "letter-spacing:0.2px",
-      "margin-left:2px",
-      "color:#0f172a", // code 部分
-    ].join(";")
-  );
-
-  // 垂直中央＆親高さにフィットさせるためのスタイル
-  wrapper.setAttribute(
-    "style",
-    [
-      "display:inline-flex",            // 行内で扱いつつ flex
-      "align-items:center",             // ★ 垂直中央
-      "justify-content:flex-start",
-      `height:${containerH}px`,         // ★ 親と同じ高さ
-      "line-height:1",                  // 行の余白でズレにくくする
-      `font-size:${fontSize}px`,        // ★ 高さからフォントサイズ算出
-      "font-family:ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\"",
-      "text-decoration:none",
-      "user-select:none",
-      "vertical-align:middle",          // 行ボックス内での縦位置も調整
-      "padding:0 6px",                  // ちょい余白
-      "border-radius:6px",
-      // 見た目の微調整（好みで）
-      "-webkit-font-smoothing:antialiased",
-      "text-rendering:optimizeLegibility",
-      "background:transparent",
-      "cursor:pointer",
-    ].join(";")
-  );
-
-  wrapper.appendChild(spanHibiki);
-  wrapper.appendChild(spanCode);
-
-  // 先に画像を削除してから同じ位置へ差し戻し
-  img.remove();
-  if (parent) {
-    if (isParentLink) {
-      // 親がリンクなら中の<img>だけをロゴ文字に置換
-      parent.insertBefore(wrapper, next);
-    } else {
-      // 親がリンクでない場合は<a>として差し込む
-      if (next) parent.insertBefore(wrapper, next);
-      else parent.appendChild(wrapper);
+    if (!img) {
+      console.log("指定されたロゴ要素は存在しませんでした。");
+      return;
     }
-    console.log("ロゴを 'hibiki'（#e11d48） + 'code'（#0f172a）で置き換えました。");
-  } else {
-    document.body.prepend(wrapper);
-    console.log("親要素が見つからず、body先頭に追加しました。");
-  }
-});
 
+    const parent = img.parentElement;
+    const parentRect = parent?.getBoundingClientRect();
+    const imgRect = img.getBoundingClientRect();
+
+    // 親の高さ優先で取得（なければ画像の描画高さ）
+    const containerH = Math.round(parentRect?.height || imgRect.height || 32);
+    const fontSize = Math.max(12, Math.floor(containerH * 0.52)); // 視覚的バランス調整
+
+    // 親が<a>でも崩れないように、置換用の span（行内ブロック）を作成
+    const wrapper = document.createElement("span");
+
+    // wrapper で縦中央を保証：height と line-height を同値に
+    wrapper.setAttribute(
+      "style",
+      [
+        "display:inline-block",
+        `height:${containerH}px`,
+        `line-height:${containerH}px`, // ★ これが効く
+        "vertical-align:middle",       // 行ボックス内の位置合わせ
+        "padding:0 6px",
+        "border-radius:6px",
+        "user-select:none",
+        "text-decoration:none",
+        "background:transparent",
+        "cursor:pointer",
+        // 見た目向上
+        "-webkit-font-smoothing:antialiased",
+        "text-rendering:optimizeLegibility",
+        "font-family:ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\"",
+      ].join(";")
+    );
+
+    // 内側テキストは line-height を 1 に戻して基線ズレを無くす
+    const baseTextStyle = [
+      "display:inline-block",
+      "line-height:1",
+      "vertical-align:middle",
+      `font-size:${fontSize}px`,
+      "font-weight:800",
+      "letter-spacing:0.2px",
+    ].join(";");
+
+    const spanHibiki = document.createElement("span");
+    spanHibiki.textContent = "hibiki";
+    spanHibiki.setAttribute(
+      "style",
+      [baseTextStyle, "color:#e11d48" /* ローズ系 */].join(";")
+    );
+
+    const spanCode = document.createElement("span");
+    spanCode.textContent = "code";
+    spanCode.setAttribute(
+      "style",
+      [baseTextStyle, "margin-left:2px", "color:#0f172a" /* 濃スレート */].join(";")
+    );
+
+    // クリック先が必要なら、wrapper の中に <a> を入れてもOK
+    // ここでは親がリンクでないときだけ <a> を作って包む
+    const isParentLink = parent && parent.tagName.toLowerCase() === "a";
+    if (!isParentLink) {
+      const link = document.createElement("a");
+      link.href = "/";
+      link.setAttribute("aria-label", "hibikicode - home");
+      link.setAttribute("style", "text-decoration:none; color:inherit;");
+      link.append(spanHibiki, spanCode);
+      wrapper.appendChild(link);
+    } else {
+      wrapper.append(spanHibiki, spanCode);
+    }
+
+    // 画像をその場で置換（位置ずれを最小化）
+    img.replaceWith(wrapper);
+
+    console.log("縦中央&色分割の文字ロゴに置き換えました。");
+  });
 
 
 })();
