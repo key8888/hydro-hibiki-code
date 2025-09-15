@@ -373,6 +373,7 @@ End Time: 終了時間
 Enroll Training: 練習に参加
 Enrolled: 参加済み
 Enrollees: 参加者数
+Enter Edit Mode: 編集モード
 error: エラー
 Errors detected in the config. Confirm save?: 設定にエラーが検出されました。保存を確認しますか？
 Evaluated difficulty: 推定される難易度
@@ -467,6 +468,8 @@ Images: 画像
 Import from: からインポート
 Import Problem: 問題をインポート
 Import: インポート
+Import User: ユーザー導入
+Import Users: ユーザー導入
 In 1 day: 1日後
 In 1 month: 1ヶ月後
 In 1 week: 1週間後
@@ -499,6 +502,7 @@ Italic: 斜体
 Join Domain to Create a Discussion: ドメインに参加してから議論を作成
 Join Domain to Submit: ドメインに参加してから提出
 Join Domain: ドメインに参加
+Join Application: ドメイン参加設定
 Join: 参加
 Judge Config: 評価設定
 Judge Status: 評価ステータス
@@ -552,6 +556,7 @@ manage_module: モジュール管理
 manage_script: スクリプト管理
 manage_setting: システム設定
 manage_user_priv: ユーザー権限
+Manage Groups: グループ管理
 manage: 管理
 Manage: 管理
 Manager: マネージャー
@@ -1105,4 +1110,3 @@ Your browser does not support WebAuthn or you are not in secure context.: お使
 Your Device: あなたのデバイス
 Your permission: あなたの権限
 Your role: あなたのロール
-
