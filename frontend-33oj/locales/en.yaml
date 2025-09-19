@@ -227,14 +227,14 @@ Copyright Complaint: 著作権侵害の申し立て
 Correction: 補題
 CPU Info: CPU情報
 Create a contest: コンテストを作成
-Create a Discussion: 議論を作成
+Create a Discussion: トークルームを作成
 Create a Post: 投稿を作成
 Create a problem: 問題を作成
 Create Contest: コンテストを作成
 Create contests: コンテストを作成
-Create Discussion in {0}: '{0}で議論を作成'
-Create Discussion: 議論を作成
-Create discussions: 議論を作成
+Create Discussion in {0}: '{0}でトークルームを作成'
+Create Discussion: トークルームを作成
+Create discussions: トークルームを作成
 Create Domain: ドメインを作成
 Create File: ファイルを作成
 Create Group: グループを作成
@@ -269,12 +269,12 @@ Day: 日
 Deadline: 締め切り
 Default Code Language: デフォルトのコード言語
 Default Code Template: デフォルトのコードテンプレート
-Delete discussion replies of own discussion: 自分の議論内の返信を削除
-Delete discussion replies: 議論の返信を削除
-Delete discussions: 議論を削除
+Delete discussion replies of own discussion: 自分の返信を削除
+Delete discussion replies: トークの返信を削除
+Delete discussions: トークを削除
 Delete Domain: ドメインを削除
-Delete own discussion replies: 議論内の自分の返信を削除
-Delete own discussions: 自分の議論を削除
+Delete own discussion replies: トーク内の自分の返信を削除
+Delete own discussions: 自分のトークを削除
 Delete own problem solution replies: 問題の解答内の自分の返信を削除
 Delete own problem solutions: 自分の問題の解答を削除
 Delete problem solution replies: 問題の解答の返信を削除
@@ -293,18 +293,18 @@ Difficulty displayed: 表示される難易度
 Difficulty: 難易度
 Disabled: 無効
 Disconnected from the server. trying to reconnect...: サーバーへの接続が切断されました。再接続を試みています...
-Discussion {1} not found.: 議論 {1} が存在しません。
-Discussion category {1} already exists.: 議論カテゴリ {1} は既に存在します。
-Discussion category {1} not found.: 議論カテゴリ {1} が存在しません。
-Discussion node {1} already exists.: 議論ノード {1} は既に存在します。
-Discussion node {1} not found.: 議論ノード {1} が存在しません。
-Discussion Nodes: 「議論」で話そう
-discussion_create: 議論を作成
-discussion_edit: 議論を編集
-discussion_main: 議論
-discussion_node: 議論
-Discussion: 議論
-Discussions: 議論
+Discussion {1} not found.: トーク {1} が存在しません。
+Discussion category {1} already exists.: トークカテゴリ {1} は既に存在します。
+Discussion category {1} not found.: トークカテゴリ {1} が存在しません。
+Discussion node {1} already exists.: トークルーム {1} は既に存在します。
+Discussion node {1} not found.: トークルーム {1} が存在しません。
+Discussion Nodes: Let's「トーク」
+discussion_create: トークを作成
+discussion_edit: トークを編集
+discussion_main: トーク
+discussion_node: トーク
+Discussion: トーク
+Discussions: トーク
 Dismiss: 無視
 Display name {1} you want to set is used by others.: 設定したい表示名 {1} は他のユーザーが使用しています。
 Display Name: 表示名
@@ -318,7 +318,7 @@ Domain ID cannot be changed once the domain is created.: ドメイン作成後�
 Domain ID: ドメインID
 Domain Settings: ドメイン設定
 domain_dashboard: ドメインを管理
-domain_discussion: 議論ノードで話そう
+domain_discussion: トークルームで話そう
 domain_edit: ドメイン情報を編集
 domain_join: ドメインに参加
 domain_main: ホーム
@@ -341,14 +341,14 @@ Edit any contests: 任意のコンテストを編集
 Edit any homework: 任意の宿題を編集
 Edit Contest: コンテストを編集
 Edit description of this domain: このドメインの説明を編集
-Edit discussion replies of own discussion: 自分の議論内の返信を編集
-Edit discussion replies: 議論の返信を編集
-Edit discussions: 議論を編集
+Edit discussion replies of own discussion: 自分のトークの返信を編集
+Edit discussion replies: トークの返信を編集
+Edit discussions: トークを編集
 Edit Domain: ドメインを編集
 Edit Homework: 宿題を編集
 Edit own contests: 自分のコンテストを編集
-Edit own discussion replies: 自分の議論内の返信を編集
-Edit own discussions: 自分の議論を編集
+Edit own discussion replies: 自分のトークの返信を編集
+Edit own discussions: 自分のトークを編集
 Edit own homework: 自分の宿題を編集
 Edit own problem solution replies: 問題の解答内の自分の返信を編集
 Edit own problem solutions: 自分の問題の解答を編集
@@ -429,7 +429,7 @@ Hidden: 非表示
 Hide all tags: すべてのタグを非表示
 Hide categorical tags: カテゴリタグを非表示
 Hide tags: タグを非表示
-Highlight discussions: 議論をハイライト
+Highlight discussions: トークをハイライト
 Highlight: ハイライト
 Hint: ヒント
 Hint::icon::difficulty: Hydroにおける問題の難易度は、提出数、正解率、各提出の提出時間と評価結果に基づいて総合的に計算されるため、正確でない場合があります。
@@ -499,7 +499,7 @@ IOI(Strict): IOI(厳格)
 Is rated: ランク付け対象
 It works!: 成功しました！
 Italic: 斜体
-Join Domain to Create a Discussion: ドメインに参加してから議論を作成
+Join Domain to Create a Discussion: ドメインに参加してからトークを作成
 Join Domain to Submit: ドメインに参加してから提出
 Join Domain: ドメインに参加
 Join Application: ドメイン参加設定
@@ -539,7 +539,7 @@ Loading file...: ファイル内容を読み込み中...
 Location: 場所
 Login to Attend Contest: ログインしてコンテストに参加
 Login to Claim Homework: ログインして宿題を承認
-Login to Create a Discussion: ログインして議論を作成
+Login to Create a Discussion: ログインしてトークルームを作成
 Login to Submit: ログインして提出
 Login with Github: Githubでログイン
 Login with Google: Googleでログイン
@@ -600,11 +600,11 @@ New: 作成
 No {0} at current.: 現在、{0}がありません。
 No changes to make.: 変更はありません。
 No comments so far...: これまでのところコメントはありません...
-No discussion yet...: まだ議論はありません…
+No discussion yet...: まだ「トーク」はありません…
 No group available: 利用可能なグループがありません
 No Permission to Attend Contest: コンテストに参加する権限がありません
 No Permission to Claim Homework: 宿題を承認する権限がありません
-No Permission to Create a Discussion: 議論を作成する権限がありません
+No Permission to Create a Discussion: 「トークルーム」を作成する権限がありません
 No Permission to Submit: 提出する権限がありません
 No problem.: 問題がありません。
 No solutions so far...: これまでのところ解答はありません...
@@ -625,7 +625,7 @@ Not wrapped with space: 両側にスペースがありません
 Numeric PID: 数字の問題ID
 objective: 客観問題
 Oh, the user doesn't have any contributions!: おっと、このユーザーはまだ問題を貢献していません〜
-Oh, the user hasn't created any discussions yet!: このユーザーはまだ議論を作成していません
+Oh, the user hasn't created any discussions yet!: このユーザーはまだ「トークルーム」を作成していません
 Oh, the user hasn't submitted yet!: このユーザーはまだ問題を提出していません _(:зゝ∠)_
 Oh, there are no tasks that match the filter!: おっと、フィルターに一致するタスクがありません。
 Oh, there is no submission!: おっと、まだ評価記録がありません！
@@ -665,7 +665,7 @@ Path {0} not found.: パス {0} が見つかりません。
 Peak Memory: ピークメモリ
 Peak Time: ピーク時間
 perm_contest: コンテスト
-perm_discussion: 議論
+perm_discussion: トーク
 perm_general: 一般
 perm_homework: 宿題
 perm_problem_solution: 問題の解答
@@ -760,7 +760,7 @@ Recent Activities: 最近の活動
 Recent Problems: 最新の問題
 Recent Solutions: 最近作成された解答
 Recent Submissions: 最近の提出
-Recently Created Discussions: 最近作成された議論
+Recently Created Discussions: 最近作成されたトークルーム
 Recommended: おすすめ
 Record {0} not found.: 記録 {0} が存在しません。
 record_detail: 記録の詳細
@@ -775,7 +775,7 @@ Rejudge all submissions: 全提出を再評価
 Rejudge problems: 問題を再評価
 Rejudge records: 記録を再評価
 Rejudge: 再評価
-Related Discussions: 関連議論
+Related Discussions: 関連するトーク
 Related: 関連
 Remember me: ログイン状態を保持
 Remove Selected Group: 選択したグループを削除
@@ -786,7 +786,7 @@ Remove: 削除
 Rename Selected: 選択項目の名前を変更
 Repeat Password: パスワードを再入力
 Replace with: 次と置き換える
-Reply discussions: 議論に返信
+Reply discussions: トークに返信
 Reply problem solutions: 解答に返信
 reply: 返信
 Reply: 返信
@@ -825,7 +825,7 @@ Secret (visible to admins): 秘密（管理者のみ表示）
 Secret: 秘密
 Section: セクション
 Security: セキュリティ
-Select a node to create discussion.: 議論を作成するノードを選択
+Select a node to create discussion.: トークを作成するノードを選択
 Select a role: 役割を選択
 Select All: 全選択
 Select Category: カテゴリを選択
@@ -885,7 +885,7 @@ Source type: ソースタイプ
 Source: ソース
 Standard mode: 標準モード
 Standard Program: 標準プログラム
-Star Topic: 議論をお気に入り
+Star Topic: お気に入りTopic
 Star: お気に入り
 Starred Users: フォロー中のユーザー
 Start at: 開始日時
@@ -1040,14 +1040,14 @@ View contest scoreboard: コンテストのスコアボードを見る
 View Contest: コンテストを見る
 View contests: コンテストを見る
 View Details: 詳細を見る
-View discussions: 議論を見る
+View discussions: トークを見る
 View hidden contest submission status and scoreboard: 非公開のコンテスト提出状況とスコアボードを見る
 View hidden homework submission status and scoreboard: 非公開の宿題提出状況とスコアボードを見る
 View hidden problems: 非公開の問題を見る
 View homework scoreboard: 宿題のスコアボードを見る
 View homework: 宿題を見る
 View Homework: 宿題を見る
-View or create discussion: 議論を見る / 作成する
+View or create discussion: トークを見る / 作成する
 View or submit solution: 解答を見る / 提出する
 View Owned Problems: 自分の問題を見る
 View Owned Training Plans: 自分のトレーニング計画を見る
